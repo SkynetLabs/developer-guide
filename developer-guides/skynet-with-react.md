@@ -12,7 +12,7 @@ We use Create React App in the Introduction Workshop, so you can refer to that c
 
 ## Use HashRouter when using React-Router
 
-If you're using [React Router](https://reactrouter.com/) for your page routing, you'll want to use its `HashRouter` instead of `BrowserRouter` .  In many code examples, this replacement happens in the import statement.
+If you're using [React Router](https://reactrouter.com/) for your page routing, you'll want to use its `HashRouter` instead of `BrowserRouter` . In many code examples, this replacement happens in the import statement.
 
 ```javascript
 import {
@@ -24,7 +24,7 @@ import {
 } from "react-router-dom";
 ```
 
-This will modify links to contain `#` before the route. 
+This will modify links to contain `#` before the route.
 
 {% hint style="info" %}
 We are plan to release full support for BrowserRouter and other routing techniques in July/August 2021.
@@ -53,6 +53,4 @@ Run your normal build command, then upload the `build` folder containing an `ind
 Next, consider hosting your website using a [Handshake Name](../integrations/hns-names.md) or a traditional domain name using DNSLink.
 
 Or, consider improving your build pipeline using our [Github Action](deploy-github-actions.md).
-
-
 

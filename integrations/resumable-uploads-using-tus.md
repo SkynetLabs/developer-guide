@@ -16,7 +16,7 @@ Because this is a commonly used protocol, it [many integrations](https://tus.io/
 
 #### Upload Endpoint
 
-The basic upload endpoint is `/skynet/tus` \(i.e. https://siasky.net/skynet/tus\)
+The basic upload endpoint is `/skynet/tus` \(i.e. [https://siasky.net/skynet/tus\](https://siasky.net/skynet/tus\)\)
 
 #### Upload Flow
 
@@ -112,6 +112,4 @@ Since Skynet uses a special way of uploading and requesting files, we introduced
 Adapting the TUS protocol for resumable uploads allows users and developers to upload much larger files to Skynet without worrying about sudden interruptions causing their uploads to fail. Due to the open protocol, developers can leverage a wide ecosystem of existing SDKs and applications for building their Skapps or uploading their collections of large files to Skynet.
 
 To learn more about TUS, visit their official [website](https://tus.io/) or jump straight to their list of existing [implementations](https://tus.io/implementations.html). For example, Uppy lets you fetch data from places such as Dropbox, Instagram, or your local machine and upload them directly to Skynet!
-
-
 

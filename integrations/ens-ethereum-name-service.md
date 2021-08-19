@@ -75,7 +75,5 @@ Users using the official [ENS Domains](https://ens.domains/) site do not need to
 * To generate programmatically, use the [ENS Domains fork of content-hash](https://github.com/ensdomains/content-hash) and call `encode("skynet-ns", [skylink])`
 * Or, use the widget below.
 
-{% embed url="https://codesandbox.io/s/ens-content-hash-test-czl7i?codemirror=0&view=preview&fontsize=12&hidenavigation=1&theme=light&hidedevtools=1" %}
-
-
+{% embed url="https://codesandbox.io/s/ens-content-hash-test-czl7i?codemirror=0&view=preview&fontsize=12&hidenavigation=1&theme=light&hidedevtools=1" caption="" %}
 

@@ -23,7 +23,7 @@ Let's setup MySky login and then look at writing data to a Mysky File.
 const dataDomain = 'localhost';
 ```
 
-2. Now we need to add the code that will initialize MySky when the app loads. This code will also check to see if a user is already logged in with the appropriate permissions. Add the following code to `src/App.js` for _Step 3.2_.
+1. Now we need to add the code that will initialize MySky when the app loads. This code will also check to see if a user is already logged in with the appropriate permissions. Add the following code to `src/App.js` for _Step 3.2_.
 
 ```javascript
 // define async setup function
@@ -55,7 +55,7 @@ async function initMySky() {
 initMySky();
 ```
 
-3. Next, we need to handle when a user presses the "Login with MySky" button. This will create a pop-up window that will prompt the user to login. In future versions of MySky, it will also ask for additional permissions to be granted if the app doesn't already have them. Add the following code to `src/App.js` for _Step 3.3_.
+1. Next, we need to handle when a user presses the "Login with MySky" button. This will create a pop-up window that will prompt the user to login. In future versions of MySky, it will also ask for additional permissions to be granted if the app doesn't already have them. Add the following code to `src/App.js` for _Step 3.3_.
 
 ```javascript
 // Try login again, opening pop-up. Returns true if successful
@@ -69,7 +69,7 @@ if (status) {
 }
 ```
 
-4. We also need to handle when a user logs out. This method will tell MySky to log the user out of MySky and then delete any remaining user data from the application state. Add the following code to `src/App.js` for _Step 3.4_.
+1. We also need to handle when a user logs out. This method will tell MySky to log the user out of MySky and then delete any remaining user data from the application state. Add the following code to `src/App.js` for _Step 3.4_.
 
 ```javascript
 // call logout to globally logout of mysky
@@ -80,9 +80,8 @@ setLoggedIn(false);
 setUserID('');
 ```
 
-5. Now that we've handled login and logout, we will return to saving data when a user submits the form. Locate and uncomment `console.log('Saving user data to MySky file...');`
-
-6. After uploading the image and webpage, we make a JSON object to save to MySky. Put the following code in the below _Step 3.6_.
+1. Now that we've handled login and logout, we will return to saving data when a user submits the form. Locate and uncomment `console.log('Saving user data to MySky file...');`
+2. After uploading the image and webpage, we make a JSON object to save to MySky. Put the following code in the below _Step 3.6_.
 
 ```javascript
 // create JSON data to write to MySky
@@ -98,7 +97,7 @@ const jsonData = {
 await handleMySkyWrite(jsonData);
 ```
 
-7. We need to define what happens in the helper method above. We'll tell MySky to save our JSON file to our filePath. Put the following code in the below _Step 3.7_.
+1. We need to define what happens in the helper method above. We'll tell MySky to save our JSON file to our filePath. Put the following code in the below _Step 3.7_.
 
 ```javascript
 // Use setJSON to save the user's information to MySky file
@@ -111,7 +110,7 @@ try {
 }
 ```
 
-8. Next, we want the certificate web page to read this data. The code to fetch a MySky file is already in the generated page, but it needs to know our userID and the file path in order to find the JSON file. Find the code from _Step 2.1_ that says
+1. Next, we want the certificate web page to read this data. The code to fetch a MySky file is already in the generated page, but it needs to know our userID and the file path in order to find the JSON file. Find the code from _Step 2.1_ that says
 
 ```javascript
 const webPage = generateWebPage(name, skylinkUrl);

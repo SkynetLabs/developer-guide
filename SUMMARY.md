@@ -37,8 +37,6 @@
 
 ## APIs & SDKs
 
----
-
 * [Skynet SDK Documentation](https://siasky.net/docs)
 * [skyd API Documentation](https://sia.tech/docs)
 * [skynet-js SDK Github](https://github.com/SkynetLabs/skynet-js)

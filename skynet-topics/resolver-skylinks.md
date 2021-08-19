@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Resolver skylinks are a special type of skylink that enables skylinks whose underlying data changes. When resolver skylinks are accessed on Skynet, they "resolve" to other skylinks whose data is returned to the requester. 
+Resolver skylinks are a special type of skylink that enables skylinks whose underlying data changes. When resolver skylinks are accessed on Skynet, they "resolve" to other skylinks whose data is returned to the requester.
 
 Each resolver skylink references a specific [registry entry](the-registry.md) whose saved data points to another skylink.
 
@@ -20,7 +20,7 @@ Resolver skylinks encode the data needed to look up a registry entry and can be 
 
 #### skynet-js
 
-Creating a registry skylink in `skynet-js` works just like interacting with the registry. 
+Creating a registry skylink in `skynet-js` works just like interacting with the registry.
 
 ```javascript
 import { getEntryLink, SkynetClient } from 'skynet-js';

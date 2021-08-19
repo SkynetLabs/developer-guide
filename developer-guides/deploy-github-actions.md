@@ -10,7 +10,7 @@ description: >-
 
 After working with Skynet deployments for some time, you'll want to automate your deploy pipeline. Skynet Labs has Github Action you can easily incorporate into your workflow to automate uploading builds to Skynet.
 
-When added as a step in a workflow, the [Deploy to Skynet action](https://github.com/SkynetLabs/deploy-to-skynet-action) will upload a specified directory to Skynet, and, if given a seed, will also create a resolver skylink that points to the upload and will not change after subsequent deploys. 
+When added as a step in a workflow, the [Deploy to Skynet action](https://github.com/SkynetLabs/deploy-to-skynet-action) will upload a specified directory to Skynet, and, if given a seed, will also create a resolver skylink that points to the upload and will not change after subsequent deploys.
 
 The guide below walks through the steps, but for a full walkthrough, be sure to see Karol's article on [Automated deployments on Skynet](https://blog.sia.tech/automated-deployments-on-skynet-28d2f32f6ca1).
 
@@ -86,23 +86,23 @@ The resulting resolver skylink url \(base32 encoded skylink in subdomain\). Reso
 
 Example: `https://040f11qosugpdb7kmq5hobu3sfmr4fulr06tcspmrjtdgvg3oc6m630.siasky.net/`
 
-For more info, see the [Deploy to Skynet action repo](https://github.com/SkynetLabs/deploy-to-skynet-action). 
+For more info, see the [Deploy to Skynet action repo](https://github.com/SkynetLabs/deploy-to-skynet-action).
 
 {% hint style="info" %}
 Be sure to use a specific version of the action. Version 2 introduced resolver skylinks, replacing the `skyns` usage from earlier versions.
 {% endhint %}
 
 {% hint style="warning" %}
-The Github Action makes use of saving Encrypted Secrets on Github's servers. Avoid re-using seed phrases across contexts or repositories. 
+The Github Action makes use of saving Encrypted Secrets on Github's servers. Avoid re-using seed phrases across contexts or repositories.
 {% endhint %}
 
 ## Futher Reading
 
-{% embed url="https://blog.sia.tech/automated-deployments-on-skynet-28d2f32f6ca1" %}
+{% embed url="https://blog.sia.tech/automated-deployments-on-skynet-28d2f32f6ca1" caption="" %}
 
-{% embed url="https://docs.github.com/en/actions/quickstart" %}
+{% embed url="https://docs.github.com/en/actions/quickstart" caption="" %}
 
-{% embed url="https://docs.github.com/en/actions/reference/encrypted-secrets" %}
+{% embed url="https://docs.github.com/en/actions/reference/encrypted-secrets" caption="" %}
 
-{% embed url="https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions" %}
+{% embed url="https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions" caption="" %}
 
