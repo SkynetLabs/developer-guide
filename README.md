@@ -32,8 +32,8 @@ This documentation is open-source, so if you see a problem or want to know how t
 
 ## Additional Developer Resources
 
-* \*\*\*\*[**Skynet SDK Docs**](https://siasky.net/docs/) - Documentation for SDKs, including some public web portal APIs
-* \*\*\*\*[**Skynet Github**](https://github.com/SkynetLabs/) - Hosts repos for SDKs, workshops and more.
-* \*\*\*\*[**Skynet Gitlab**](https://gitlab.com/SkynetLabs) - Home of `skyd`
-* \*\*\*\*[**Sia Docs**](https://sia.tech/docs/#skynet) - The `renter/` and `skynet/` endpoints contain the API for `skyd` and some are accessible on public web portals. This documentation will move soon.
+* [**Skynet SDK Docs**](https://siasky.net/docs/) - Documentation for SDKs, including some public web portal APIs
+* [**Skynet Github**](https://github.com/SkynetLabs/) - Hosts repos for SDKs, workshops and more.
+* [**Skynet Gitlab**](https://gitlab.com/SkynetLabs) - Home of `skyd`
+* [**Sia Docs**](https://sia.tech/docs/#skynet) - The `renter/` and `skynet/` endpoints contain the API for `skyd` and some are accessible on public web portals. This documentation will move soon.
 
