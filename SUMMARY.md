@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Skynet Developer Guide](README.md)
+* [Getting Started](getting-started.md)
 
 ## Skynet Workshops
 
