@@ -1,6 +1,6 @@
 # Getting Started
 
-## Getting Started
+## Uploading a Site to Skynet
 
 To get started deploying a site on Skynet, create a folder with an `index.html` file in it and all css and javascript linked with relative paths. Visit [http://siasky.net/](http://siasky.net/), select "Do you want to upload an entire directory?" then upload the directory.
 
