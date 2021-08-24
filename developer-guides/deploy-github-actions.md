@@ -4,7 +4,7 @@ description: >-
   walkthrough here?
 ---
 
-# Deploy to Github Action
+# Deploy-to-Skynet Github Action
 
 ## Introduction
 

@@ -33,7 +33,7 @@
 
 * [Server-Hosted Skynet Usage](developer-guides/server-hosted-skynet-usage.md)
 * [Skynet with React](developer-guides/skynet-with-react.md)
-* [Deploy to Github Action](developer-guides/deploy-github-actions.md)
+* [Deploy-to-Skynet Github Action](developer-guides/deploy-github-actions.md)
 * [Setting up a Handshake Name](developer-guides/setting-up-a-handshake-name.md)
 * [Additional Skynet Tools](developer-guides/additional-skynet-tools.md)
 * [Migrating from SkyID to MySky](developer-guides/migrating-from-skyid-to-mysky.md)
