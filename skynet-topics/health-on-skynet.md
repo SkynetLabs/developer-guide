@@ -115,7 +115,7 @@ Another way of accessing the health of a registry entry, using an entry's `entry
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="entryid" type="string" required=true %}
-WHAT IS THIS?
+entryid of the registry entry _\(See description.\)_
 {% endapi-method-parameter %}
 
 {% api-method-parameter type="number" name="timeout" %}
