@@ -1,5 +1,15 @@
 # Data Access Controllers
 
+## Introduction
+
+Data Access Controllers \(or, "DACs"\) let several applications easily access and modify MySky Files that are shared-in-common between them.
+
+A DAC is loaded in an iframe, and the application loads a "DAC Library" for interacting with the APIs exposed by the DAC.
+
+Imagine a user's personal profile that they want to use across applications on Skynet. A web app could load a User Profile DAC library which creates an iframe with the DAC code. This allows for API-like access to shared code for reading and modifying the user's profile. All write-access goes through the DAC and by exposing an API for modifications, no application needs to worry that another application will corrupt the profile data or break standard specifications of the shared file.
+
+DACs allows for social web apps that share data between friends and across web apps.
+
 ## Commonly Used DACs
 
 The DACs commonly in use today implement data schemas developed in the community-organized [Skystandards repository](https://github.com/SkynetLabs/skystandards). The DAC libraries let application developers quickly implement and access MySky files adhering to these standards for seamless interoperability between Skynet applications. 
