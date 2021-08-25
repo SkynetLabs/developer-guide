@@ -25,7 +25,7 @@ To install, run `npm install -g yarn` in your terminal.
 
 Git is a tool used to manage your project's source code.
 
-To install, follow the instruction [available here](https://gist.github.com/derhuerst/1b15ff4652a867391f03) or try [Github Desktop](https://desktop.github.com/).
+To install, follow the instruction [available here](https://gist.github.com/derhuerst/1b15ff4652a867391f03) or try [Github Desktop](https://desktop.github.com/). 
 
 ### Clone the Workshop
 
@@ -44,4 +44,6 @@ Open your terminal to the cloned repo folder and run `yarn install` to install t
 ### Start Development Server
 
 Run `yarn start` to spin up a local development server that serves our application. If your browser doesn't launch, visit `localhost:3000`. Create React App will auto-reload when you save a file, but sometimes you may need to stop the server and run the command again. \(Use Ctrl+C in the terminal to stop your app.\)
+
+
 

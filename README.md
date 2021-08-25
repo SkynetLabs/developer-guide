@@ -19,14 +19,12 @@ Skynet offers several advantages to developers:
 
 ## Navigating these resources
 
-These docs have several key sections:
+These docs have 3 primary sections:
 
-* \*\*\*\*[**Getting Started**](getting-started.md) ****- New to Skynet? Start here.
 * **Skynet Workshops** - Walkthroughs for building Web Apps with Skynet
 * **Skynet Topics** - Articles about Skynet components, how they work under the hood, and how to use them in your application
 * **Integrations** - Extensions of the Skynet ecosystem to help build more powerful and flexible applications
 * **Developer Guides** - Assorted resources, walkthroughs, and best practices.
-* **APIs & SDKs** - Easy to access links to external documentation and repos.
 
 {% hint style="info" %}
 This documentation is open-source, so if you see a problem or want to know how to do something we don't address -- please submit an issue to the Github repo or reach out on the [Skynet Discord](https://discord.gg/skynetlabs).
@@ -34,8 +32,8 @@ This documentation is open-source, so if you see a problem or want to know how t
 
 ## Additional Developer Resources
 
-* [**Skynet SDK Docs**](https://siasky.net/docs/) - Documentation for SDKs, including some public web portal APIs
-* [**Skynet Github**](https://github.com/SkynetLabs/) - Hosts repos for SDKs, workshops and more.
-* [**Skynet Gitlab**](https://gitlab.com/SkynetLabs) - Home of `skyd`
-* [**Sia Docs**](https://sia.tech/docs/#skynet) - The `renter/` and `skynet/` endpoints contain the API for `skyd` and some are accessible on public web portals. This documentation will move soon.
+* \*\*\*\*[**Skynet SDK Docs**](https://siasky.net/docs/) - Documentation for SDKs, including some public web portal APIs
+* \*\*\*\*[**Skynet Github**](https://github.com/SkynetLabs/) - Hosts repos for SDKs, workshops and more.
+* \*\*\*\*[**Skynet Gitlab**](https://gitlab.com/SkynetLabs) - Home of `skyd`
+* \*\*\*\*[**Sia Docs**](https://sia.tech/docs/#skynet) - The `renter/` and `skynet/` endpoints contain the API for `skyd` and some are accessible on public web portals. This documentation will move soon.
 

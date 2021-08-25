@@ -10,7 +10,7 @@ MySky replaces a portion of the decentralized login responsibilities of SkyID an
 
 MySky will still cover these use-cases, and will even support users choosing SkyID as their "seed provider" so they're still able to log in using their SkyID seed through MySky.
 
-When using MySky, you app will not be handling or using any of the user's private keys. This is for their protection and to increase trust in the Skynet ecosystem as we create a truly interoperable data layer. Instead, when you ask to write to SkyDB, MySky will handle deriving the necessary keys and signing any entries. Read more in [MySky](migrating-from-skyid-to-mysky.md).
+When using MySky, you app will not be handling or using any of the user's private keys. This is for their protection and to increase trust in the Skynet ecosystem as we create a truly interoperable data layer. Instead, when you ask to write to SkyDB, MySky will handle deriving the necessary keys and signing any entries. Read more in [MySky]().
 
 {% hint style="warning" %}
 At the moment, MySky supports "Discoverable" and "Hidden" file types and uses different seed derivations for each. We do not yet support SkyID's seed derivation method, although it could be useful for data migration in the future. Please let us know if this is a feature you need.
@@ -18,7 +18,7 @@ At the moment, MySky supports "Discoverable" and "Hidden" file types and uses di
 
 ### If you're using SkyID for &lt;script&gt; imports
 
-If you're using SkyID for accessing Skynet without using a Javascript build tools or package managers, we are now releasing versioned, browser-ready `skynet-js` builds.
+If you're using SkyID for accessing Skynet without using a Javascript build tools or package managers, we are now releasing versioned, browser-ready `skynet-js` builds. 
 
 **Beta Release:**
 

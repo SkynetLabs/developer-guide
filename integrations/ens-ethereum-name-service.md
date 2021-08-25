@@ -57,7 +57,7 @@ Unfamiliar with Ethereum ecosystem? If you already have a wallet and some ETH, i
 
 ![Visit you ENS domain&apos;s management page](../.gitbook/assets/4.png)
 
-![Set the content field to a \`sia://\` skylink](../.gitbook/assets/4_withskylink%20%281%29.png)
+![Set the content field to a \`sia://\` skylink](../.gitbook/assets/4_withskylink%20%282%29.png)
 
 ![Confirm the changes and the wallet transaction](../.gitbook/assets/4confirm.png)
 
@@ -75,5 +75,7 @@ Users using the official [ENS Domains](https://ens.domains/) site do not need to
 * To generate programmatically, use the [ENS Domains fork of content-hash](https://github.com/ensdomains/content-hash) and call `encode("skynet-ns", [skylink])`
 * Or, use the widget below.
 
-{% embed url="https://codesandbox.io/s/ens-content-hash-test-czl7i?codemirror=0&view=preview&fontsize=12&hidenavigation=1&theme=light&hidedevtools=1" caption="" %}
+{% embed url="https://codesandbox.io/s/ens-content-hash-test-czl7i?codemirror=0&view=preview&fontsize=12&hidenavigation=1&theme=light&hidedevtools=1" %}
+
+
 

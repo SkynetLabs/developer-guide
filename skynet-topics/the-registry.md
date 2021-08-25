@@ -65,7 +65,7 @@ The Registry might seem limited by itself -- be sure to see MySky Files, SkyDB a
 
 Registry entries are read using `GET` requests to the `skynet/registry` endpoint on web portals or [skyd](https://sia.tech/docs/#skynet-registry-get) instances.
 
-The URL uses a hash of the `dataKey` so the above example can be [accessed here](https://siasky.net/skynet/registry?publickey=ed25519%3A6759d5ced2c0c9b4f308c19ddca7304291754323589e7cf9e417351744ae9465&datakey=056f1ef8df2086e5aa284c1331cea86662be52b2a2deca83fc1683dc91be11a3&timeout=5).
+The URL uses a hash of the `dataKey` so the above example can be [accessed here](https://siasky.net/skynet/registry?publickey=ed25519%3A6759d5ced2c0c9b4f308c19ddca7304291754323589e7cf9e417351744ae9465&datakey=056f1ef8df2086e5aa284c1331cea86662be52b2a2deca83fc1683dc91be11a3&timeout=5). 
 
 ```javascript
 {

@@ -5,7 +5,7 @@
 Our Skynet Workshop is a great place to building web apps with Skynet. The workshop covers the important concepts of developing an app on Skynet, but you may still want to read through the [Getting Started](https://support.siasky.net/getting-started/using-skynet) section of the Skynet Guide.
 
 {% hint style="info" %}
-[Create React App](https://github.com/facebook/create-react-app) is used for structuring the workshop and simplifying deployment, but you don't need any knowledge of React or Javascript to complete it. The project prioritizes new-developer accessibility over production-ready, React best practices.
+ [Create React App](https://github.com/facebook/create-react-app) is used for structuring the workshop and simplifying deployment, but you don't need any knowledge of React or Javascript to complete it. The project prioritizes new-developer accessibility over production-ready, React best practices.
 {% endhint %}
 
 ## What You'll Build
@@ -33,5 +33,5 @@ If you prefer video walkthroughs, checkout a recording of a previous workshop al
 Some syntax may have changed in latest beta versions of `skynet-js` – please refer to this guide or the [workshop repo](https://github.com/SkynetLabs/skynet-workshop) for up-to-date code samples.
 {% endhint %}
 
-{% embed url="https://youtu.be/TDiLdHQidBE?t=2098" caption="" %}
+{% embed url="https://youtu.be/TDiLdHQidBE?t=2098" %}
 

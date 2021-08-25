@@ -40,7 +40,7 @@ console.log('Web Page Uploaded:', dirSkylinkUrl);
 setWebPageSkylink(dirSkylinkUrl);
 ```
 
-1. Above this code, uncomment `console.log('Uploading web page...');`
+2. Above this code, uncomment `console.log('Uploading web page...');`
 
 **3. Test it out!** Now the user can submit their name and photo to generate their very own web page on Skynet!
 

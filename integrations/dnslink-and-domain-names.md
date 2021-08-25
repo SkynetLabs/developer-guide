@@ -1,6 +1,6 @@
 # DNSLink & Domain Names
 
-Skynet supports the [DNSLink](https://dnslink.dev/) protocol for serving skyfiles from behind a traditional domain name by setting special DNS records.
+Skynet supports the [DNSLink](https://dnslink.dev/) protocol for serving skyfiles from behind a traditional domain name by setting special DNS records. 
 
 This means users can visit `yourDomain.com` and Siasky.net will serve your web application from Skynet with no traditional hosting company.
 

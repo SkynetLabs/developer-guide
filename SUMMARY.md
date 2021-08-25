@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Skynet Developer Guide](README.md)
-* [Getting Started](getting-started.md)
 
 ## Skynet Workshops
 
@@ -17,12 +16,7 @@
 
 * [The Registry](skynet-topics/the-registry.md)
 * [Resolver Skylinks](skynet-topics/resolver-skylinks.md)
-* [SkyDB](skynet-topics/skydb.md)
-* [MySky & DACs](skynet-topics/mysky-and-dacs/README.md)
-  * [MySky Files](skynet-topics/mysky-and-dacs/mysky-files.md)
-  * [Data Access Controllers](skynet-topics/mysky-and-dacs/data-access-controllers.md)
 * [Portal Accounts](skynet-topics/portal-accounts.md)
-* [Health on Skynet](skynet-topics/health-on-skynet.md)
 
 ## Integrations
 
@@ -30,18 +24,20 @@
 * [DNSLink & Domain Names](integrations/dnslink-and-domain-names.md)
 * [ENS \(Ethereum Name Service\)](integrations/ens-ethereum-name-service.md)
 * [Resumable Uploads Using tus](integrations/resumable-uploads-using-tus.md)
-* [Homescreen](integrations/homescreen.md)
 
 ## Developer Guides
 
 * [Server-Hosted Skynet Usage](developer-guides/server-hosted-skynet-usage.md)
 * [Skynet with React](developer-guides/skynet-with-react.md)
-* [Deploy-to-Skynet Github Action](developer-guides/deploy-github-actions.md)
+* [Deploy to Github Action](developer-guides/deploy-github-actions.md)
 * [Setting up a Handshake Name](developer-guides/setting-up-a-handshake-name.md)
 * [Additional Skynet Tools](developer-guides/additional-skynet-tools.md)
 * [Migrating from SkyID to MySky](developer-guides/migrating-from-skyid-to-mysky.md)
+* [Operating a Skynet Webportal](developer-guides/operating-a-skynet-webportal.md)
 
 ## APIs & SDKs
+
+---
 
 * [Skynet SDK Documentation](https://siasky.net/docs)
 * [skyd API Documentation](https://sia.tech/docs)

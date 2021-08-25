@@ -20,7 +20,7 @@ Because we only rely on blockchain records, we do not support subdomains, second
 
 ![Handshake DNS Using a Skylink](../.gitbook/assets/image%20%289%29.png)
 
-When setting a **TXT** record for your domain, use a skylink format starting with `sia://` — this can be a Skylink directly referencing your web app, or a resolver skylink that can be updated to point at other skylinks. Updating a resolver skylink will propagate much faster than modifying your DNS records on the Handshake blockchain, a process which can take several hours. See [Resolver Skylinks](hns-names.md) for more info.
+When setting a **TXT** record for your domain, use a skylink format starting with `sia://` — this can be a Skylink directly referencing your web app, or a resolver skylink that can be updated to point at other skylinks. Updating a resolver skylink will propagate much faster than modifying your DNS records on the Handshake blockchain, a process which can take several hours. See [Resolver Skylinks]() for more info.
 
 {% hint style="danger" %}
 Notice these formats differ from DNSLink. We are not using traditional DNS resolution, and DNSLink requires records on subdomains to function properly.
@@ -52,7 +52,7 @@ See the below example for [dghelm/](http://dghelm.hns.to/) and [mirror.dghelm/](
 
 ## Further Reading
 
-{% embed url="https://blog.sia.tech/handshake-retrospective-after-the-first-year-c197e49749c9" caption="" %}
+{% embed url="https://blog.sia.tech/handshake-retrospective-after-the-first-year-c197e49749c9" %}
 
-{% embed url="https://blog.sia.tech/dlinks-launches-on-skynet-d6883e6eff0a" caption="" %}
+{% embed url="https://blog.sia.tech/dlinks-launches-on-skynet-d6883e6eff0a" %}
 
