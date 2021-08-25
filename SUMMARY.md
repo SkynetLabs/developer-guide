@@ -40,6 +40,7 @@
 * [Setting up a Handshake Name](developer-guides/setting-up-a-handshake-name.md)
 * [Additional Skynet Tools](developer-guides/additional-skynet-tools.md)
 * [Migrating from SkyID to MySky](developer-guides/migrating-from-skyid-to-mysky.md)
+* [Operating a Skynet Webportal](developer-guides/operating-a-skynet-webportal.md)
 
 ## APIs & SDKs
 
