@@ -16,7 +16,9 @@ Skylink Health
 {% endapi-method-summary %}
 
 {% api-method-description %}
-The health of a skylink is determined by how many servers are hosting full versions of the skyfile's base sector. By default, a new upload should have a value of 10. This method queries all hosts when determining how many copies of the base sector are stored across the network.
+The health of a skylink is determined by how many servers are hosting full versions of the skyfile's base sector. By default, a new upload should have a value of 10. This method queries all hosts when determining how many copies of the base sector are stored across the network.  
+  
+Portal will wait the entire duration of the timeout for hosts to respond, so longer timeouts mean higher accuracy.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -62,7 +64,9 @@ This method queries all hosts to determine:
 - `numbestentries` – Number of hosts on network with the "best" entry  
 - `numbestprimaryentries` – Number of best primary entries on network _\(Not yet in use.\)_  
 - `numentries` – Total number of entries found across the network  
-- `revisionnumber`– Current revision number of a "best" entry \(highest on network\)
+- `revisionnumber`– Current revision number of a "best" entry \(highest on network\)  
+  
+Portal will wait the entire duration of the timeout for hosts to respond, so longer timeouts mean higher accuracy.
 {% endapi-method-description %}
 
 {% api-method-spec %}
