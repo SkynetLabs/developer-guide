@@ -8,6 +8,10 @@ With Data Access Controllers \(DACs\), developers using MySky can leverage power
 
 When you upload a file to Skynet, the hash is not connected to the uploader. There are no mechanisms for tracking or remembering what files you uploaded. With MySky Files, users and developers can take advantage of a virtual file system, using paths and access controls that create a flexible way to store, access, and share data.
 
+## Adding MySky to an App
+
+The best place to get started understanding MySky integration for an app is in the Introduction Workshop's [Part 3: Make it Dynamic with MySky](../../skynet-workshops/introduction-workshop/part-3-make-it-dynamic-with-mysky.md). You will see how to add load MySky in your application, add a [dataDomain](mysky-files.md#mysky-permissions-and-datadomains), check to see if a user is logged in, and attach a "login" function to a button to launch the login and permissions window for the users.
+
 ## Key Ideas
 
 As David wrote in his announcement of the technology, "[MySky: Your Home on the Global Operating System of the Future](https://blog.sia.tech/mysky-your-home-on-the-global-operating-system-of-the-future-5a288f89825c)":
