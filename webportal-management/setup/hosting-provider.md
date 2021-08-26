@@ -2,11 +2,11 @@
 
 ## Overview
 
-At the end of this section, you should have a newly initialized server that meetings the [system requirements](../system-requirements.md) and is accessible via `ssh` for the `root` user or compatible `sudo` user. 
+At the end of this section, you should have a newly initialized server that meets the [requirements](../requirements.md) and is accessible via `ssh` for the `root` user or compatible `sudo` user. 
 
 ## Order New Server
 
-The first step is to order a new server from your hosting provider that meets the [system requirements](../system-requirements.md). 
+The first step is to order a new server from your hosting provider that meets the [requirements](../requirements.md) listed in the beginning of this section. 
 
 Here is a list of some hosting providers to consider:
 
@@ -17,7 +17,7 @@ Here is a list of some hosting providers to consider:
 
 ## Install OS
 
-Once the server has been purchased, the next step will be to install the [recommended OS](../system-requirements.md#system-os). Each hosting provider's UI is slightly different. Sometimes this is part of the server purchase and other times this must be done after the server is added to your account. 
+Once the server has been purchased, the next step will be to install the [recommended OS](../requirements.md#system-os). Each hosting provider's UI is slightly different. Sometimes this is part of the server purchase and other times this must be done after the server is added to your account. 
 
 ## Verify SSH Access
 

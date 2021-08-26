@@ -44,13 +44,14 @@
 
 ## WEBPORTAL MANAGEMENT
 
-* [System Requirements](webportal-management/system-requirements.md)
+* [Requirements](webportal-management/requirements.md)
 * [Setup](webportal-management/setup/README.md)
   * [Hosting Provider](webportal-management/setup/hosting-provider.md)
   * [Server Initialization](webportal-management/setup/server-initialization.md)
   * [Single Portal Setup](webportal-management/setup/single-portal-setup.md)
   * [Cluster Setup](webportal-management/setup/cluster-setup.md)
   * [Deployment](webportal-management/setup/deployment.md)
+* [Ansible](webportal-management/ansible.md)
 
 ## APIs & SDKs
 
