@@ -69,6 +69,11 @@ Your site can request permissions to other dataDomains using the `mySky.addPermi
 Encrypted Files use Hidden File permissions. An app needs permissions to read or write to Hidden Files to access Encrypted Files.
 {% endhint %}
 
+{% hint style="info" %}
+When adding permissions, you won't know your current domain beforehand, since your site might be run directly from its skylink. One way to get around this is to use the value from  
+`await client.extractDomain(window.location.href)`
+{% endhint %}
+
 ## Further Reading
 
 {% embed url="https://hackmd.io/r-q0LhnLQF23Vk8bofZGKg" caption="Additional Information on Encrypted Files" %}
