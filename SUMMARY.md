@@ -22,6 +22,7 @@
   * [MySky Files](skynet-topics/mysky-and-dacs/mysky-files.md)
   * [Data Access Controllers](skynet-topics/mysky-and-dacs/data-access-controllers.md)
 * [Portal Accounts](skynet-topics/portal-accounts.md)
+* [Framework-Flexible Routing](skynet-topics/framework-flexible-routing.md)
 * [Health on Skynet](skynet-topics/health-on-skynet.md)
 
 ## Integrations
