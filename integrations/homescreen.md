@@ -54,6 +54,17 @@ Commit the changes, try the link, and if you're logged in to MySky, you should s
 
 
 
+## Customizing Your App's Appearance
+
+Many web applications create a `Manifest` file by default and link it in the `<HEAD>` of the app's `index.html` file. Homescreen first looks for that manifest file to learn about your app. For the best user experience, be sure to set the following fields:
+
+* `short_name` or `name`
+* `description`
+* an object in the `icons` array
+* `theme_color`
+
+Read more about webmanifest files at web.dev's [Add a web app manifest](https://web.dev/add-manifest/) article.
+
 ## Explore More
 
 {% embed url="https://homescreen.hns.siasky.net/" caption="" %}
