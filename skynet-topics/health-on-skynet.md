@@ -31,7 +31,7 @@ Base64 Skylink
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="timeout" type="number" required=false %}
-Timeout in seconds. Higher is more accurate. \(Default: 30\)
+Timeout in seconds. Higher is more accurate. \(Default: 30, Max: 300\)
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -82,7 +82,7 @@ Data key of registry entry \(Not pre-hashed as used by `skynet-js`\)
 
 {% api-method-parameter name="timeout" type="number" required=false %}
 Timeout in seconds. Higher is more accurate.  
-\(Default: 30\)
+\(Default: 30, Max: 300\)
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -123,7 +123,7 @@ entryid of the registry entry _\(See description.\)_
 {% endapi-method-parameter %}
 
 {% api-method-parameter type="number" name="timeout" %}
-Timeout in seconds. Higher is more accurate. \(Default: 30\)
+Timeout in seconds. Higher is more accurate. \(Default: 30, Max: 300\)
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
