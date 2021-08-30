@@ -128,7 +128,7 @@ jobs:
           registry-seed: ${{ secrets.SKYNET_REGISTRY_SEED || '' }}
 ```
 
-## Futher Reading
+## Further Reading
 
 {% embed url="https://blog.sia.tech/automated-deployments-on-skynet-28d2f32f6ca1" caption="" %}
 
