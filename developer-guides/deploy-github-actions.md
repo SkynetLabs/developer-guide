@@ -96,6 +96,38 @@ Be sure to use a specific version of the action. Version 2 introduced resolver s
 The Github Action makes use of saving Encrypted Secrets on Github's servers. Avoid re-using seed phrases across contexts or repositories.
 {% endhint %}
 
+## Example deploy-to-skynet.yml
+
+This file is a good place to start. In your project, create a  `.github/workflows/deploy-to-skynet.yml`file.
+
+```yaml
+name: Deploy to Skynet
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+
+      - run: yarn
+      - run: yarn build
+
+      - name: "Deploy to Skynet"
+        uses: SkynetLabs/deploy-to-skynet-action@resolver-skylink
+        with:
+          upload-dir: build
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          registry-seed: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && secrets.SKYNET_REGISTRY_SEED || '' }}
+```
+
 ## Futher Reading
 
 {% embed url="https://blog.sia.tech/automated-deployments-on-skynet-28d2f32f6ca1" caption="" %}
