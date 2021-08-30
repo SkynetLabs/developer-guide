@@ -65,7 +65,7 @@ Unfamiliar with Ethereum ecosystem? If you already have a wallet and some ETH, i
 
 ## Additional Resources
 
-### Generating a ContentHash for Skylinks without the ENS App
+### Generating a ContentHash without the ENS App
 
 If you aren't using the ENS frontend, you'll need to generate a content hash for your skylink.
 
