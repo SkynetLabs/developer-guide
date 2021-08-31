@@ -8,8 +8,6 @@
 
 ![](../.gitbook/assets/image.png)
 
-_\[UPDATE THIS LINK TO A FRAMEWORK-FLEXIBLE ROUTING DEPLOY TOOL THAT ALSO GIVES YOUR A BASE-64 SKYLINK\]_
-
 ## 2. Aquire a Handshake Name
 
 This is the most difficult part of the process, since it requires obtaining HNS coins. We recommend using [namebase.io](https://www.namebase.io/) to interact with the Handshake ecosystem. See their [Get Handshake Names](https://learn.namebase.io/starting-from-zero/how-to-get-a-name) to learn more about their auctions and marketplace.
