@@ -128,6 +128,12 @@ jobs:
           registry-seed: ${{ secrets.SKYNET_REGISTRY_SEED || '' }}
 ```
 
+## Video Example
+
+In this walkthrough demo, setting up the Github action starts at 18:50.
+
+{% embed url="https://www.youtube.com/watch?v=ZbGb7FppaZ4" %}
+
 ## Further Reading
 
 {% embed url="https://blog.sia.tech/automated-deployments-on-skynet-28d2f32f6ca1" caption="" %}

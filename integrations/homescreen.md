@@ -67,6 +67,8 @@ Read more about webmanifest files at web.dev's [Add a web app manifest](https://
 
 ## Explore More
 
+{% embed url="https://www.youtube.com/watch?v=ZbGb7FppaZ4" caption="Video Guide for Integrating Homescreen" %}
+
 {% embed url="https://homescreen.hns.siasky.net/" caption="" %}
 
 {% embed url="https://homeapp.hns.siasky.net/" caption="" %}
