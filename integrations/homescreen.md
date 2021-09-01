@@ -62,6 +62,7 @@ Many web applications create a `Manifest` file by default and link it in the `<H
 * `description`
 * an object in the `icons` array
 * `theme_color`
+* `skylink` - the official resolver skylink for the latest builds of your app
 
 Read more about webmanifest files at web.dev's [Add a web app manifest](https://web.dev/add-manifest/) article.
 
