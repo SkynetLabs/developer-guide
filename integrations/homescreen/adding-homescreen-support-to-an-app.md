@@ -30,7 +30,7 @@ Many web applications create a `Manifest` file by default and link it in the `<H
 * `theme_color`
 * `skylink`
 
-By setting the resolver skylink for your application here, Homescreen will be able to check for updates to the application. Read more about webmanifest files at web.dev's [Add a web app manifest](https://web.dev/add-manifest/) article.
+By setting the resolver skylink for your application here, Homescreen will be able to check for updates to the application. Read more about webmanifest files at web.dev's [Add a web app manifest](https://web.dev/add-manifest/) article. Here is [an example manifest](https://siasky.net/AQBTlVUdVT_qLqqA_4umNe8aiO6KxoGbfvWzEEk0OyvF7w/manifest.json) from our Uniswap fork.
 
 ### 4. Add the Homescreen button on your project's Readme
 
