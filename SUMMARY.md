@@ -31,7 +31,8 @@
 * [DNSLink & Domain Names](integrations/dnslink-and-domain-names.md)
 * [ENS \(Ethereum Name Service\)](integrations/ens-ethereum-name-service.md)
 * [Resumable Uploads Using tus](integrations/resumable-uploads-using-tus.md)
-* [Homescreen](integrations/homescreen.md)
+* [Homescreen](integrations/homescreen/README.md)
+  * [Adding Homescreen Support to an App](integrations/homescreen/adding-homescreen-support-to-an-app.md)
 
 ## Developer Guides
 
