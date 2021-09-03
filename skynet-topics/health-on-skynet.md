@@ -44,7 +44,13 @@ Base sector redundancy shows how many hosts contain full versions of the file's 
 
 ```javascript
 {
-    "basesectorredundancy": 8
+    "basesectorredundancy": 18,
+    "fanouteffectiveredundancy": 2.6,
+    "fanoutdatapieces": 10,
+    "fanoutparitypieces": 20,
+    "fanoutredundancy": [
+        2.6
+    ]
 }
 ```
 {% endapi-method-response-example %}
