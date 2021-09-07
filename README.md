@@ -26,6 +26,7 @@ These docs have several key sections:
 * **Skynet Topics** - Articles about Skynet components, how they work under the hood, and how to use them in your application
 * **Integrations** - Extensions of the Skynet ecosystem to help build more powerful and flexible applications
 * **Developer Guides** - Assorted resources, walkthroughs, and best practices.
+* **Webportal Management** - Get started running your own Skynet Webporal
 * **APIs & SDKs** - Easy to access links to external documentation and repos.
 
 {% hint style="info" %}
