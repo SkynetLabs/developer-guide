@@ -24,5 +24,5 @@ Running a web portal consists of 3 major services
 As of 08/25/2021, we are within weeks of releasing tooling and documentation for making the process of starting and running a portal much easier.
 {% endhint %}
 
-Please see the documentation in skynet-webportal on [Setup Scripts](https://github.com/SkynetLabs/skynet-webportal/tree/master/setup-scripts) to get started.
+Please see the documentation in the [Webportal Management](../webportal-management/requirements.md) section to get started.
 
