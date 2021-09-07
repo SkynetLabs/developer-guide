@@ -39,7 +39,12 @@ Timeout in seconds. Higher is more accurate. \(Default: 30, Max: 300\)
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Base sector redundancy shows how many hosts contain full versions of the file's base sector.
+Base sector redundancy shows how many hosts contain full versions of the file's base sector.  
+  
+`fanouteffectiveredundancy` — the redundancy of the fanout, represented as the worst redundancy of any of the chunks  
+`fanoutdatapieces` — the number of data pieces defined by the erasure coding of the fanout. Default is 10 for the 10-of-30 erasure coding that results in 3x redundancy  
+`fanoutparitypieces` — the number of parity pieces as defined by the erasure coding of the fanout. Default is 20 for the 10-of-30 erasure coding that results in 3x redundancy.  
+`fanoutredundancy` — an array of all chunk redundancies. So you can see if there is a single chunk that is bringing down the redundancy or if they are all a similar redundancy.
 {% endapi-method-response-example-description %}
 
 ```javascript
