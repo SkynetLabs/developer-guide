@@ -2,15 +2,11 @@
 
 ## Introduction
 
-Homescreen provides a way for users to save immutable versions of application front-ends. We see this as particularly necessary for the DeFi space for additional security and control over access to decentralized protocols and smart contracts.
+[Homescreen](https://homescreen.hns.siasky.net/) provides a way for users to save immutable versions of application front-ends. We see this as particularly necessary for the DeFi space for additional security and control over access to decentralized protocols and smart contracts.
 
-To learn more about using Homescreen, see the Skynet Guide article Homescreen \(soon\).
+To learn more about using Homescreen, see the [Skynet Guide article](https://support.siasky.net/key-concepts/homescreen) on Homescreen.
 
 {% embed url="https://www.youtube.com/watch?v=jOSXlAVeY7g" caption="Skynet Labs CEO David Vorick introucing Homescreen at EthCC\[4\]. See 12:15." %}
-
-{% hint style="warning" %}
-Homescreen is not yet released but [is available](https://homeapp.hns.siasky.net/) for early-stage testing and integrations. We will be regularly updating this page with the information needed to get your app working with Homescreen, but expect to see further changes.
-{% endhint %}
 
 ## How Homescreen Works
 
@@ -53,8 +49,6 @@ Sites using centralized APIs may still work with Homescreen, but breaking change
 ## Explore More
 
 {% embed url="https://homescreen.hns.siasky.net/" caption="Future Home of Homescreen" %}
-
-{% embed url="https://homeapp.hns.siasky.net/" caption="Beta Release of Homescreen" %}
 
 {% embed url="https://github.com/SkynetLabs/uniswap-interface" caption="Example Repo for showing Homescreen Support  " %}
 
