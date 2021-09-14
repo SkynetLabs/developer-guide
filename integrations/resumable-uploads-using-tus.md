@@ -16,7 +16,7 @@ Because this is a commonly used protocol, it [many integrations](https://tus.io/
 
 #### Upload Endpoint
 
-The basic upload endpoint is `/skynet/tus` \(i.e. [https://siasky.net/skynet/tus\](https://siasky.net/skynet/tus\)\)
+The basic upload endpoint is `/skynet/tus` \(i.e. https://siasky.net/skynet/tus\)
 
 #### Upload Flow
 
