@@ -1,7 +1,7 @@
 ---
 description: >-
-  Web3 needs decentralized front-ends. Skynet's Homescreen lets users save
-  copies of front-ends and lets developers worry less about keeping them online.
+  Web3 needs decentralized front-ends. Deploying your project to Skynet with
+  Homescreen makes it easy.
 ---
 
 # Homescreen
@@ -10,7 +10,9 @@ description: >-
 
 {% embed url="https://youtu.be/peyomCiTCpQ" %}
 
-[Homescreen](https://homescreen.hns.siasky.net/) allows users to save immutable versions of web app front-ends, without relying on centralized services. DeFi and Web3 especially need this for additional security and control over access to decentralized protocols and smart contracts.
+[Homescreen](https://homescreen.hns.siasky.net/) allows developers to easily deploy their front-ends to decentralized storage. From here, users can save immutable versions of the site, without relying on centralized services and they're always able to update to the developer's most recent deployment.
+
+Developers no longer need to worry about keeping their front-ends online. Skynet handles decentralized storage, Homescreen handles access and versioning. This is especially important for DeFi and Web3 applications needing a front-end that prioritizes security, censorship resistance, and consistant access to decentralized protocols and smart contracts.
 
 To learn more about using Homescreen, see the [Skynet Guide article](https://support.siasky.net/key-concepts/homescreen) on Homescreen.
 
