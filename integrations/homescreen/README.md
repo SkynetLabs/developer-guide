@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-[Homescreen](https://homescreen.hns.siasky.net/) provides a way for users to save immutable versions of application front-ends. We see this as particularly necessary for the DeFi space for additional security and control over access to decentralized protocols and smart contracts.
+[Homescreen](https://homescreen.hns.siasky.net/) allows users to save immutable versions of web app front-ends, without relying on centralized services. DeFi and Web3 especially need this for additional security and control over access to decentralized protocols and smart contracts.
 
 To learn more about using Homescreen, see the [Skynet Guide article](https://support.siasky.net/key-concepts/homescreen) on Homescreen.
 
@@ -18,13 +18,18 @@ To learn more about using Homescreen, see the [Skynet Guide article](https://sup
 
 ### Adding an App
 
-Using either an "Add to Homescreen" button or the input bar at the top of the Homescreen site, users are able to add Skylink to their "Homescreen." If a resolver skylink is used, Homescreen will determine where the resolver skylink currently resolves to. If the user selects "Add to Homescreen," then the content of the immutable skylink is "pinned" to the user's storage.
+Users can install apps in two ways:
+
+1. Projects can place an "Add to Homescreen" button on their site or code repository. Users can click this to open Homescreen and choose to install the app.
+2. Using the input bar at the top of Homescreen, users can add files or sites using skylinks, HNS names, or site URLs. We plan to also support ENS and DNSLink if they resolve to a webapp hosted on Skynet.
+
+Both of these methods with pin the current, immutable skylink to the user's MySky storage. If present in the app's manifest file, the resolver skylink will also be retained for checking for future updates.
 
 ### Updating and Versioning an App
 
-Updates are made available for apps by using resolver skylinks. If you update where a resolver skylink resolves to, your users will be able save the new url as a "version" of the app.
+Updates are made available for apps by using [resolver skylinks](../../skynet-topics/resolver-skylinks.md). If a project updates where a resolver skylink resolves to, users will be able save the new underlying skylink as a "version" of the app.
 
-If an app includes a resolver skylink in the `skylink` field of its [Manifest](adding-homescreen-support-to-an-app.md#3-configure-your-manifest-file), this skylink will be used for grouping saved versions and checking for updates. If no `skylink` field is found, the resolver skylink used when initially adding the app to Homescreen will be used. If the app has no resolver skylink associated with it, updates and versions are not available.
+Homescreen uses the resolver skylink in the `skylink` field of the app's [Manifest](adding-homescreen-support-to-an-app.md#3-configure-your-manifest-file). This skylink is also used for grouping saved versions and checking for updates. If no `skylink` field is found, the resolver skylink used when initially adding the app to Homescreen will be used. If the app has no resolver skylink associated with it, updates and versions are not available for the file or application.
 
 ### MySky & Homescreen Storage
 
@@ -44,19 +49,13 @@ Sites using centralized APIs may still work with Homescreen, but breaking change
 
 {% page-ref page="adding-homescreen-support-to-an-app.md" %}
 
-## Homescreen Preview
-
-![Example Homescreen Mockup](../../.gitbook/assets/with-uniswap.png)
-
-![Example &quot;Add to Homescreen&quot; button](../../.gitbook/assets/image%20%287%29.png)
-
 
 
 ## Explore More
 
 {% embed url="https://www.youtube.com/watch?v=jOSXlAVeY7g" caption="Skynet Labs CEO David Vorick introucing Homescreen at EthCC\[4\]. See 12:15." %}
 
-{% embed url="https://homescreen.hns.siasky.net/" caption="Future Home of Homescreen" %}
+{% embed url="https://homescreen.hns.siasky.net/" caption="Try Homescreen" %}
 
 {% embed url="https://github.com/SkynetLabs/uniswap-interface" caption="Example Repo for showing Homescreen Support  " %}
 
