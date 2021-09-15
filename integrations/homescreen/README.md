@@ -8,11 +8,11 @@ description: >-
 
 ## Introduction
 
+{% embed url="https://youtu.be/peyomCiTCpQ" %}
+
 [Homescreen](https://homescreen.hns.siasky.net/) allows users to save immutable versions of web app front-ends, without relying on centralized services. DeFi and Web3 especially need this for additional security and control over access to decentralized protocols and smart contracts.
 
 To learn more about using Homescreen, see the [Skynet Guide article](https://support.siasky.net/key-concepts/homescreen) on Homescreen.
-
-{% embed url="https://youtu.be/peyomCiTCpQ" %}
 
 ## How Homescreen Works
 
