@@ -4,7 +4,7 @@
 
 Preparing your app for deployment on Homescreen should not require many changes if the app is already designed for decentralized usage. 
 
-{% embed url="https://www.youtube.com/watch?v=ZbGb7FppaZ4" caption="Video Introduction for Integrating Homescreen" %}
+{% embed url="https://www.youtube.com/watch?v=rK8diBGeXeg&t=78s" caption="Video Tutorial for Adding Homescreen to an App. Demo starts at 11:15." %}
 
 ## Supporting Homescreen in your application
 
@@ -53,4 +53,8 @@ Commit the changes, try the link, and if you're logged in to MySky, you should s
 ![Save to Homescreen pop-up. See extended detalis to confirm Manifest info.](../../.gitbook/assets/image%20%2814%29.png)
 
 
+
+## Additional Resources
+
+{% embed url="https://www.youtube.com/watch?v=ZbGb7FppaZ4" caption="Video Introduction for Integrating Homescreen, including with an HNS name" %}
 
