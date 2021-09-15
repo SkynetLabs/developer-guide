@@ -1,3 +1,9 @@
+---
+description: >-
+  Web3 needs decentralized front-ends. Skynet's Homescreen lets users save
+  copies of front-ends and lets developers worry less about keeping them online.
+---
+
 # Homescreen
 
 ## Introduction
