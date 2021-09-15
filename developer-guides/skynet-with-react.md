@@ -27,7 +27,7 @@ import {
 This will modify links to contain `#` before the route.
 
 {% hint style="info" %}
-We are plan to release full support for BrowserRouter and other routing techniques in July/August 2021.
+We are plan to release full support for BrowserRouter and other routing techniques in September 2021.
 {% endhint %}
 
 ## Add "Homepage" to package.json
