@@ -11,6 +11,7 @@ We'll first cover the most basic functionality of Skynet, uploading data.
 Follow the steps below to update this app to allow the user to upload a file to Skynet. For this sample app, we'll ask the user to upload a picture.
 
 1. Install `skynet-js` by running `yarn add skynet-js@beta`
+
 2. First, you need to import the SDK and initialize a Skynet Client. Open the file `src/App.js`, look for where _Step 1.2_ code goes, and paste the following code.
 
 ```javascript
@@ -30,7 +31,7 @@ const client = new SkynetClient(portal);
 In a deployed application, we don't want to "hard-code" the Skynet portal. Instead, we want the browser to use the same portal that the site is being accessed through. So here, if our browser is pointed to "localhost," we use the siasky.net portal, otherwise, we don't define a portal and let the SkynetClient worry about it.
 {% endhint %}
 
-1. Next, create the upload functionality. In the `handleSubmit` function \(called for when form is submitted\), paste the code that will upload a file below the _Step 1.3_ mark.
+3. Next, create the upload functionality. In the `handleSubmit` function \(called for when form is submitted\), paste the code that will upload a file below the _Step 1.3_ mark.
 
 ```javascript
 // Upload user's file and get backs descriptor for our Skyfile
@@ -46,7 +47,7 @@ console.log('File Uploaded:', skylinkUrl);
 setFileSkylink(skylinkUrl);
 ```
 
-1. Above this code, uncomment `console.log('Uploading file...');`
+4. Above this code, uncomment `console.log('Uploading file...');`
 
 **5. Test it out!** If you aren't still running the app, run `yarn start` again and try uploading a file. If you open your Developer Console \(by pressing F12\), the console show helpful messages.
 

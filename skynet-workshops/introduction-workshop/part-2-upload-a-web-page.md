@@ -12,7 +12,7 @@ The upload will be a directory defined by a JSON object. We'll title the webpage
 
 In addition to files, Skynet can receive directory uploads. Once uploaded to Skynet, any directory with an `index.html` will load in your browser just like any website. This enables developers to write and deploy their web app, just by uploading the project's build folder.
 
-1.First, create the upload directory functionality. Back in `handleSubmit` inside `src/App.js`, paste this code in the area for _Step 2.1_.
+1. First, create the upload directory functionality. Back in `handleSubmit` inside `src/App.js`, paste this code in the area for _Step 2.1_.
 
 ```javascript
 // Create the text of an html file what will be uploaded to Skynet
@@ -44,7 +44,7 @@ setWebPageSkylink(dirSkylink);
 setWebPageSkylinkUrl(dirSkylinkUrl);
 ```
 
-1. Above this code, uncomment `console.log('Uploading web page...');`
+2. Above this code, uncomment `console.log('Uploading web page...');`
 
 **3. Test it out!** Now the user can submit their name and photo to generate their very own web page on Skynet!
 
