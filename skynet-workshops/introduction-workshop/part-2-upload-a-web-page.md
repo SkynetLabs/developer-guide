@@ -31,13 +31,17 @@ const { skylink: dirSkylink } = await client.uploadDirectory(
   'certificate'
 );
 
-// generate a URL for our current portal
-const dirSkylinkUrl = client.getSkylinkUrl(dirSkylink);
+// Generate a URL for our current portal
+// We'll use a subdomain-style link
+const dirSkylinkUrl = await client.getSkylinkUrl(dirSkylink, {
+  subdomain: true,
+});
 
 console.log('Web Page Uploaded:', dirSkylinkUrl);
 
 // To use this later in our React app, save the URL to the state.
-setWebPageSkylink(dirSkylinkUrl);
+setWebPageSkylink(dirSkylink);
+setWebPageSkylinkUrl(dirSkylinkUrl);
 ```
 
 1. Above this code, uncomment `console.log('Uploading web page...');`
