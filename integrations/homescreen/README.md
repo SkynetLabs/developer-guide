@@ -55,6 +55,8 @@ Sites using centralized APIs may still work with Homescreen, but breaking change
 
 ## Explore More
 
+{% embed url="https://blog.sia.tech/announcing-homescreen-decentralized-frontends-for-web3-113a3564530d" %}
+
 {% embed url="https://www.youtube.com/watch?v=jOSXlAVeY7g" caption="Skynet Labs CEO David Vorick introucing Homescreen at EthCC\[4\]. See 12:15." %}
 
 {% embed url="https://homescreen.hns.siasky.net/" caption="Try Homescreen" %}
