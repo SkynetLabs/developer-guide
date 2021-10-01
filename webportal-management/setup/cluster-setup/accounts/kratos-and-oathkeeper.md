@@ -6,6 +6,10 @@ Most of the needed config is already under `docker/kratos`. The only two things 
 
 Make sure to create your own`docker/kratos/config/kratos.yml` by copying the `kratos.yml.sample` in the same directory. Also, make sure to never add that file to source control because it will most probably contain your email password in plain text!
 
+{% hint style="info" %}
+Store your `kratos.yml` file somewhere safe as it will be reused on all other servers in your portal cluster.
+{% endhint %}
+
 ## New Cluster Set Up
 
 If you are setting up a new cluster then you will need to generate a new set of keys. 

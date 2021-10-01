@@ -6,7 +6,7 @@ The Accounts system is comprised of a couple of subsystems. This section will co
 
 * MongoDB
 * [Cockroach](cockroach.md)
-* Kratos and Oathkeeper
+* [Kratos and Oathkeeper](kratos-and-oathkeeper.md)
 
 
 
