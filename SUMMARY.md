@@ -57,6 +57,7 @@
     * [Docker Services](webportal-management/setup/cluster-setup/docker-services.md)
     * [Accounts](webportal-management/setup/cluster-setup/accounts/README.md)
       * [Cockroach](webportal-management/setup/cluster-setup/accounts/cockroach.md)
+      * [Kratos and Oathkeeper](webportal-management/setup/cluster-setup/accounts/kratos-and-oathkeeper.md)
   * [Deployment](webportal-management/setup/deployment.md)
 * [Upgrading](webportal-management/upgrading.md)
 * [Retiring Webportal Servers](webportal-management/retiring-webportal-servers.md)
