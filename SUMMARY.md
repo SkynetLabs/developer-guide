@@ -55,6 +55,7 @@
   * [Cluster Setup](webportal-management/setup/cluster-setup.md)
   * [Deployment](webportal-management/setup/deployment.md)
 * [Ansible](webportal-management/ansible.md)
+* [Upgrading](webportal-management/upgrading.md)
 
 ## APIs & SDKs
 
