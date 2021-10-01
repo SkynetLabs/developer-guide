@@ -56,6 +56,7 @@
   * [Deployment](webportal-management/setup/deployment.md)
 * [Ansible](webportal-management/ansible.md)
 * [Upgrading](webportal-management/upgrading.md)
+* [Retiring Webportal Servers](webportal-management/retiring-webportal-servers.md)
 
 ## APIs & SDKs
 
