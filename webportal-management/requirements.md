@@ -1,3 +1,7 @@
+---
+description: Below are the requirements for a Public Web Portal server.
+---
+
 # Requirements
 
 ## Hardware
