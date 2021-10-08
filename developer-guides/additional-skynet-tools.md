@@ -17,6 +17,7 @@ SDKs marked with \* above are not fully implemented – only skynet-js implement
 ## Community SDKs & Initiatives
 
 * [**Skynet SDK for Dart**](https://github.com/redsolver/skynet) – Use Sia Skynet, SkyDB and MySky in your Dart and Flutter projects
+* [**Skynet-swift**](https://github.com/ppamorim/skynet-swift) – Use Sia Skynet in your iOS or macOS projects using Swift
 * [**py-skydb**](https://github.com/PowerLoom/py-skydb) – Python Wrapper that you can use to interact with SkyDB portals
 * [**Skystandards**](https://github.com/SkynetHQ/skystandards) – a proposal for data standards to be adopted in Skynet applications in such a way that users can share and use their data in different Skynet apps
 * [**Zenbase**](https://github.com/Fluffy9/Zenbase) – Skynet storage adapter for [GunDB](https://gun.eco/)
