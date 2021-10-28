@@ -29,7 +29,7 @@
 
 * [Handshake & HNS Names](integrations/hns-names.md)
 * [DNSLink & Domain Names](integrations/dnslink-and-domain-names.md)
-* [ENS \(Ethereum Name Service\)](integrations/ens-ethereum-name-service.md)
+* [ENS (Ethereum Name Service)](integrations/ens-ethereum-name-service.md)
 * [Resumable Uploads Using tus](integrations/resumable-uploads-using-tus.md)
 * [Homescreen](integrations/homescreen/README.md)
   * [Adding Homescreen Support to an App](integrations/homescreen/adding-homescreen-support-to-an-app.md)
@@ -44,6 +44,8 @@
 * [Moving from IPFS to Skynet](developer-guides/moving-from-ipfs-to-skynet.md)
 * [Migrating from SkyID to MySky](developer-guides/migrating-from-skyid-to-mysky.md)
 * [Operating a Skynet Webportal](developer-guides/operating-a-skynet-webportal.md)
+* [Additional Tooling](developer-guides/additional-tooling/README.md)
+  * [ArGoApp Skynet Deployment](developer-guides/additional-tooling/argoapp-skynet-deployment.md)
 
 ## WEBPORTAL MANAGEMENT
 
@@ -70,4 +72,3 @@
 * [skynet-js SDK Github](https://github.com/SkynetLabs/skynet-js)
 * [Skynet Webportal Github](https://github.com/SkynetLabs/skynet-webportal)
 * [skyd Gitlab](https://gitlab.com/SkynetLabs/skyd)
-
