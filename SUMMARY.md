@@ -63,6 +63,7 @@
   * [Deployment](webportal-management/setup/deployment.md)
 * [Upgrading](webportal-management/upgrading.md)
 * [Retiring Webportal Servers](webportal-management/retiring-webportal-servers.md)
+* [Handling Abuse Requests](webportal-management/handling-abuse-requests.md)
 * [Getting Help](webportal-management/getting-help.md)
 
 ## APIs & SDKs
