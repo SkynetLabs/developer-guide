@@ -123,4 +123,6 @@ and replace it with
 const webPage = generateWebPage(name, skylinkUrl, userID, filePath);
 ```
 
-**9. Test it out!** Now the user can select the color for the halo effect, which gets read from our MySky data every time a viewer loads the webpage! We've made our static page dynamic! In the next step, we'll add loading this data into the web app, where a user can edit it without needing to re-upload an image and webpage.
+**9. Test it out!** In part 3, try signing into MySky, selecting a color and re-submitting the form. The new website should have a halo effect matching your color choice. \
+\
+Now, the webpage is reading from our MySky data every time a viewer loads the webpage! We've made our static page into a dynamic page! In the next step, we'll add the ability to load this MySky data into the web app later on, where a user can update it without needing to re-upload an image and webpage.
