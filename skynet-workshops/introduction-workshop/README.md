@@ -14,12 +14,12 @@ In this workshop, you'll create a web app that interacts with Skynet and can be 
 
 We've already built out the app structure and UI elements so you can focus on Skynet features. By the end, your application will:
 
-* Upload a file to Skynet
-* Use this file in a simple webpage it will deploy to Skynet
-* Allow MySky users to login and save data to a MySky File that is read by the simple webpage
-* Publish each update to the Content Record DAC
+* Upload an image file to Skynet
+* Use this file in a simple webpage that the app will deploy to Skynet
+* Allow MySky users to login and save data to a MySky File that is also read by the simple webpage
+* Publish each update to page contents and MySky File to the Content Record DAC
 
-By the end, you should have an understanding of each of these pieces and how to leverage these in your code. We're interacting with Skynet in several ways, but take your time, and if you run into any issues, let us know in the [Skynet Labs Discord](https://discord.gg/skynetlabs).
+By the end, you should have an understanding of each of these pieces and how to leverage these in your code. We're interacting with Skynet in several ways and working with several design patterns, but take your time, and if you run into any issues, let us know in the [Skynet Labs Discord](https://discord.gg/skynetlabs).
 
 ![Skynet Workshop App Preview](../../.gitbook/assets/workshop.png)
 
