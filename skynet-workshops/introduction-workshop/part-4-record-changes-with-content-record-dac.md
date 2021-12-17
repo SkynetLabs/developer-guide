@@ -82,7 +82,7 @@ try {
 }
 ```
 
-7\. Returning to our logic from before, we want to tell the Content Record DAC that we've created a new certificate when we upload a webpage. Add the following code for _Step 4.7_.
+7\. Returning to our logic from before, when we call `handleMySkyWrite` and upload the web page, we want to tell the Content Record DAC that we've created this new website / certificate. Add the following code for _Step 4.7_.
 
 ```javascript
 try {
@@ -94,4 +94,4 @@ try {
 }
 ```
 
-**8. Test it out!** Now the user can update the color of the halo which is read from our MySky data! You can also use the [Content Record Viewer](http://skey.hns.siasky.net) tool to see your content record.
+**8. Test it out!** Now the user can update the color of the halo which is read from our MySky data! Change the value, save the data to MySky, then refresh your certificate. Same URL, new color, and a notification sent out that you've made an update. You can also use the [Content Record Viewer](http://skey.hns.siasky.net) tool to see your content record.
