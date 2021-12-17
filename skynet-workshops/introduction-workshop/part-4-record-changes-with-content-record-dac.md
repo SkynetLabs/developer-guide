@@ -5,11 +5,11 @@
 In part 3, we saw how to save mutable files on Skynet using MySky. In this section, we'll see how to load that data from MySky, and how to use the Content Record DAC to tell others you have made new content or interacted with existing content.
 
 {% hint style="success" %}
-DACs (Data Access Controllers) are like plugins for MySky. Each one exposes an API so that web apps can share code and resources. This is especially useful when MySky data will get used by several applications. They let you not worry about messing up a data structure and focus on building your application.
+DACs (Data Access Controllers) are like plugins for MySky. Each one exposes an API so that web apps can share code and resources. This is especially useful when MySky data will get used by several applications. DACs let you not worry about messing up a data structure and instead focus on building your application.
 {% endhint %}
 
 {% hint style="warning" %}
-The Content Record DAC has little utility outside this tutorial. For more powerful DACs, see [Commonly Used DACs](../../skynet-topics/mysky-and-dacs/data-access-controllers.md#commonly-used-dacs).
+The Content Record DAC rarely gets used outside of this tutorial. For more powerful and useful DACs, see [Commonly Used DACs](../../skynet-topics/mysky-and-dacs/data-access-controllers.md#commonly-used-dacs).
 {% endhint %}
 
 ## The Code
