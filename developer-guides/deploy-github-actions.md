@@ -32,7 +32,7 @@ If you're already familiar with Github Actions, add an action to a workflow by a
 
 #### `upload-dir`
 
-**Required** Directory to upload \(usually `build`, `dist`, `out` or `public`\).
+**Required** Directory to upload (usually `build`, `dist`, `out` or `public`).
 
 This action requires the upload directory to be already available so you will need to run the build step before running this action.
 
@@ -42,9 +42,23 @@ This action requires the upload directory to be already available so you will ne
 
 Find out more about github token from [documentation](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow).
 
+#### `try-files`
+
+Default value: `index.html`
+
+Define a list of space-separated files that the portal should try to serve in if uri points to a directory, ie `index.html /index.html`.
+
+#### `not-found-page`
+
+Define a path to a file that will replace the default 404 Not Found error page, ie `404.html`.
+
 #### `registry-seed`
 
-You can provide a seed \(keep it secret, keep it safe\) and this action will set corresponding skynet registry entry value to the deployed resolver skylink.
+{% hint style="danger" %}
+Use a Github Secret for this seed! DO NOT COMMIT THIS IN PLAIN TEXT.
+{% endhint %}
+
+You can provide a seed (keep it secret, keep it safe) and this action will set the corresponding skynet registry entry value to the deployed resolver skylink.
 
 Public link to the registry entry will be printed in the action log.
 
@@ -70,7 +84,7 @@ Example: `sia://IAC6CkhNYuWZqMVr1gob1B6tPg4MrBGRzTaDvAIAeu9A9w`
 
 #### `skylink-url`
 
-The resulting skylink url \(base32 encoded skylink in subdomain\).
+The resulting skylink url (base32 encoded skylink in subdomain).
 
 Example: `https://400bk2i89lheb6d8olltc2grqgfaqfge1im134ed6q1ro0g0fbnk1to.siasky.net`
 
@@ -82,7 +96,7 @@ Example: `sia://AQDwh1jnoZas9LaLHC_D4-2yP9XYDdZzNtz62H4Dww1jDA`
 
 #### `resolver-skylink-url`
 
-The resulting resolver skylink url \(base32 encoded skylink in subdomain\). Resolver skylink will remain the same throughout the deploys, but will always resolve to the latest deploy.
+The resulting resolver skylink url (base32 encoded skylink in subdomain). Resolver skylink will remain the same throughout the deploys, but will always resolve to the latest deploy.
 
 Example: `https://040f11qosugpdb7kmq5hobu3sfmr4fulr06tcspmrjtdgvg3oc6m630.siasky.net/`
 
@@ -136,11 +150,10 @@ In this walkthrough demo, setting up the Github action starts at 18:50.
 
 ## Further Reading
 
-{% embed url="https://blog.sia.tech/automated-deployments-on-skynet-28d2f32f6ca1" caption="" %}
+{% embed url="https://blog.sia.tech/automated-deployments-on-skynet-28d2f32f6ca1" %}
 
-{% embed url="https://docs.github.com/en/actions/quickstart" caption="" %}
+{% embed url="https://docs.github.com/en/actions/quickstart" %}
 
-{% embed url="https://docs.github.com/en/actions/reference/encrypted-secrets" caption="" %}
+{% embed url="https://docs.github.com/en/actions/reference/encrypted-secrets" %}
 
-{% embed url="https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions" caption="" %}
-
+{% embed url="https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions" %}
