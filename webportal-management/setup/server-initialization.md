@@ -12,7 +12,7 @@ You should have completed the [DNS Setup](dns-setup.md).
 
 ### LastPass
 
-As mentioned in the [requirements](../requirements/#applications) at the beginning of this section, many ansible scripts use LastPass for managing server credentials and common files. If you haven't created a LastPass account yet you will need to create one now.
+As mentioned in the [requirements](../requirements.md#applications) at the beginning of this section, many ansible scripts use LastPass for managing server credentials and common files. If you haven't created a LastPass account yet you will need to create one now.
 
 In your LastPass account, you will then need to create an entry for the server as seen below. Updating `<server name>` with the name of your server, i.e. `us-west`, and `domain` with your domain, i.e. `siasky.net`. Ansible will pull this information from LastPass in order to create the user `user` on the server with the provided password.&#x20;
 

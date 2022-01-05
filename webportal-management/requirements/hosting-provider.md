@@ -2,11 +2,11 @@
 
 ## Overview
 
-At the end of this section, you should have a newly initialized server that meets the [requirements](../requirements/) and is accessible via `ssh` for the `root` user or compatible `sudo` user.&#x20;
+In order to run a Webportal, you will need 1 or more servers. At the end of this section, you should have a newly initialized server that meets the requirements and is accessible via `ssh` for the `root` user or compatible `sudo` user.&#x20;
 
 ## Order a New Server
 
-The first step is to order a new server from your hosting provider that meets the [requirements](../requirements/) listed in the beginning of this section.&#x20;
+The first step is to order a new server from your hosting provider that meets the following recommended requirements.&#x20;
 
 Here is a list of some hosting providers to consider:
 
@@ -14,9 +14,31 @@ Here is a list of some hosting providers to consider:
 * [https://skynode.eu/](https://skynode.eu)
 * [https://dedicated.com/](https://dedicated.com)
 
+### Network
+
+1 Gbps up and down is recommended.&#x20;
+
+High limit or unlimited bandwidth is encouraged. Bandwidth usage is of course highly dependent on the usage of each portal but it is important to note, that even with low numbers of new uploads, repair bandwidth will continue to increase over time.&#x20;
+
+### Hardware
+
+The following are the recommendations for hardware requirements.&#x20;
+
+#### CPU
+
+Intel Xeon E-2136 or AMD Ryzen 5 3600 CPU or better.
+
+#### RAM
+
+32GB of RAM or more.
+
+#### Storage
+
+500GB SSD/NVMe or more. SSD is required, disk space will be most impacted by the amount of logging the server does.&#x20;
+
 ## Install OS
 
-Once the server has been purchased, the next step will be to install the [recommended OS](../requirements/#system-os). Each hosting provider's UI is slightly different. Sometimes this is part of the server purchase and other times this must be done after the server is added to your account.&#x20;
+Once the server has been purchased, the next step will be to install the recommended OS which is Debian 10. Each hosting provider's UI is slightly different. Sometimes this is part of the server purchase and other times this must be done after the server is added to your account.&#x20;
 
 ## Verify SSH Access
 
@@ -26,7 +48,7 @@ Once the OS is installed, verify that you have ssh access to the `root` user, or
 ssh root@<host>
 ```
 
-If you are able to successfully ssh into the `root` user then you are done and can continue to [Server Initialization](server-initialization.md).
+If you are able to successfully ssh into the `root` user then you are done and can continue to [Server Initialization](../setup/server-initialization.md).
 
 If you either don't have a `root` user or are prompted for a password when `ssh`ing into the server, please see the following sections for help.
 

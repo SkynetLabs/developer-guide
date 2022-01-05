@@ -50,12 +50,13 @@
 ## WEBPORTAL MANAGEMENT
 
 * [Overview](webportal-management/overview.md)
-* [Requirements](webportal-management/requirements/README.md)
+* [Prerequisites](webportal-management/requirements.md)
   * [LastPass](webportal-management/requirements/lastpass.md)
-* [Ansible](webportal-management/ansible.md)
+  * [Ansible](webportal-management/requirements/ansible.md)
+  * [AWS](webportal-management/requirements/aws.md)
+  * [Hosting Provider](webportal-management/requirements/hosting-provider.md)
 * [Setup](webportal-management/setup/README.md)
   * [DNS Setup](webportal-management/setup/dns-setup.md)
-  * [Hosting Provider](webportal-management/setup/hosting-provider.md)
   * [Server Initialization](webportal-management/setup/server-initialization.md)
   * [Single Portal Setup](webportal-management/setup/single-portal-setup.md)
   * [Cluster Setup](webportal-management/setup/cluster-setup/README.md)
