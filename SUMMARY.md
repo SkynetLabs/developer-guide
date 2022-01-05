@@ -53,6 +53,7 @@
 * [Requirements](webportal-management/requirements.md)
 * [Ansible](webportal-management/ansible.md)
 * [Setup](webportal-management/setup/README.md)
+  * [DNS Setup](webportal-management/setup/dns-setup.md)
   * [Hosting Provider](webportal-management/setup/hosting-provider.md)
   * [Server Initialization](webportal-management/setup/server-initialization.md)
   * [Single Portal Setup](webportal-management/setup/single-portal-setup.md)

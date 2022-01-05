@@ -8,7 +8,7 @@ MySky Files are saved to a location that mimics a file system in an operating sy
 
 ## MySky File Paths
 
-MySky Files use pathnames to distinguish between them. An application might save a user's preferences to `applicationName/preferences.json`. The first part of the path \(before the first "/"\) is called the `dataDomain` and an application request permissions to a dataDomain.
+MySky Files use pathnames to distinguish between them. An application might save a user's preferences to `applicationName/preferences.json`. The first part of the path (before the first "/") is called the `dataDomain` and an application request permissions to a dataDomain.
 
 {% hint style="info" %}
 MySky Files are distinguished by the path _and_ type. A Discoverable File and an Encrypted File can share a "path" without over-writing one another.
@@ -18,7 +18,7 @@ MySky Files are distinguished by the path _and_ type. A Discoverable File and an
 
 ### Discoverable Files
 
-Discoverable Files are the most public MySky File type. They are associated with your MySky UserID, and often used for writing MySky Files to predictable path locations \(or using indexes at predictable path locations\) so other applications can easily read and "discover" the data.
+Discoverable Files are the most public MySky File type. They are associated with your MySky UserID, and often used for writing MySky Files to predictable path locations (or using indexes at predictable path locations) so other applications can easily read and "discover" the data.
 
 Profile data and blog posts are great examples of data users want to be unencrypted and publicly accessible.
 
@@ -42,12 +42,12 @@ Hidden Files are not yet implemented in MySky, but are on the road map.
 
 ### Comparison
 
-|  | Discoverable Files | Encrypted Files | Hidden Files |
-| :--- | :---: | :---: | :---: |
-| Encrypted | ❌ | ✅ | ✅ |
-| Associated with MySky User ID | ✅ | ✅ | ❌ |
-| Accessible if UserID and Path Known | ✅ | ❌ | ❌ |
-| Permissions needed for Read access | ❌ | ✅ | ✅ |
+|                                     | Discoverable Files | Encrypted Files | Hidden Files |
+| ----------------------------------- | :----------------: | :-------------: | :----------: |
+| Encrypted                           |          ❌         |        ✅        |       ✅      |
+| Associated with MySky User ID       |          ✅         |        ✅        |       ❌      |
+| Accessible if UserID and Path Known |          ✅         |        ❌        |       ❌      |
+| Permissions needed for Read access  |          ❌         |        ✅        |       ✅      |
 
 ## MySky Permissions & dataDomains
 
@@ -70,15 +70,17 @@ Encrypted Files use Hidden File permissions. An app needs permissions to read or
 {% endhint %}
 
 {% hint style="info" %}
-When adding permissions, you won't know your current domain beforehand, since your site might be run directly from its skylink. One way to get around this is to use the value from  
+When adding permissions, you won't know your current domain beforehand, since your site might be run directly from its skylink. One way to get around this is to use the value from\
 `await client.extractDomain(window.location.href)`
 {% endhint %}
 
 ## Further Reading
 
-{% embed url="https://hackmd.io/r-q0LhnLQF23Vk8bofZGKg" caption="Additional Information on Encrypted Files" %}
+{% embed url="https://hackmd.io/r-q0LhnLQF23Vk8bofZGKg" %}
+Additional Information on Encrypted Files
+{% endembed %}
 
-{% embed url="https://hackmd.io/Vs0IOgJyQPaePULFjODPGQ" caption="Additional Information on Hidden Files" %}
-
-
+{% embed url="https://hackmd.io/Vs0IOgJyQPaePULFjODPGQ" %}
+Additional Information on Hidden Files
+{% endembed %}
 

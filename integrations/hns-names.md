@@ -18,7 +18,7 @@ Because we only rely on blockchain records, we do not support subdomains, second
 
 ## Accepted Formats
 
-![Handshake DNS Using a Skylink](../.gitbook/assets/image%20%289%29.png)
+![Handshake DNS Using a Skylink](<../.gitbook/assets/image (9).png>)
 
 When setting a **TXT** record for your domain, use a skylink format starting with `sia://` — this can be a Skylink directly referencing your web app, or a resolver skylink that can be updated to point at other skylinks. Updating a resolver skylink will propagate much faster than modifying your DNS records on the Handshake blockchain, a process which can take several hours. See [Resolver Skylinks](hns-names.md) for more info.
 
@@ -38,7 +38,9 @@ To determine where an HNS name is set to resolve, make a GET request to `/skynet
 
 An example can be seen here, or try using the widget below, which takes advantage of the `skynet-js` method `client.resolveHns(hnsName)`
 
-{% embed url="https://codesandbox.io/s/skynet-guide-widgets-jp5wt?codemirror=0&view=preview&fontsize=12&hidenavigation=1&theme=light&hidedevtools=1&initialpath=%2F%23%2Fhns-lookup" caption="Type Your HNS Name to Where a Web Portal Resolves It" %}
+{% embed url="https://codesandbox.io/s/skynet-guide-widgets-jp5wt?codemirror=0&view=preview&fontsize=12&hidenavigation=1&theme=light&hidedevtools=1&initialpath=%2F%23%2Fhns-lookup" %}
+Type Your HNS Name to Where a Web Portal Resolves It
+{% endembed %}
 
 ## Hosting at an HNS Name
 
@@ -46,13 +48,12 @@ If you want to use your TLD name for hosting a site, [dLinks](https://www.nameba
 
 This [Namebase documentation](https://docs.namebase.io/guides-1/namebase-record-assistant#example-skylink-on-bare-tld) shows how to manually set the DNS records in the Namebase nameserver DNS records to use their Skynet resolver. Use `_contenthash` and a skylink for **TXT** records and `sia.namebase.io.` as the value of an **ALIAS** record on the `@` root or a **CNAME** record on your subdomain.
 
-See the below example for [dghelm/](http://dghelm.hns.to/) and [mirror.dghelm/](http://mirror.dghelm.hns.to/) -- you can see these are distinct from [https://dghelm.hns.siasky.net/](https://dghelm.hns.siasky.net/) which is set in Blockchain DNS records section.
+See the below example for [dghelm/](http://dghelm.hns.to) and [mirror.dghelm/](http://mirror.dghelm.hns.to) -- you can see these are distinct from [https://dghelm.hns.siasky.net/](https://dghelm.hns.siasky.net) which is set in Blockchain DNS records section.
 
-![A TLD and SLD each using Skynet-hosted Sites](../.gitbook/assets/image%20%285%29.png)
+![A TLD and SLD each using Skynet-hosted Sites](<../.gitbook/assets/image (5).png>)
 
 ## Further Reading
 
-{% embed url="https://blog.sia.tech/handshake-retrospective-after-the-first-year-c197e49749c9" caption="" %}
+{% embed url="https://blog.sia.tech/handshake-retrospective-after-the-first-year-c197e49749c9" %}
 
-{% embed url="https://blog.sia.tech/dlinks-launches-on-skynet-d6883e6eff0a" caption="" %}
-
+{% embed url="https://blog.sia.tech/dlinks-launches-on-skynet-d6883e6eff0a" %}

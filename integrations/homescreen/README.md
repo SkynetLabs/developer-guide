@@ -10,7 +10,7 @@ description: >-
 
 {% embed url="https://youtu.be/peyomCiTCpQ" %}
 
-[Homescreen](https://homescreen.hns.siasky.net/) allows developers to easily deploy their front-ends to decentralized storage. From here, users can save immutable versions of the site, without relying on centralized services and they're always able to update to the developer's most recent deployment.
+[Homescreen](https://homescreen.hns.siasky.net) allows developers to easily deploy their front-ends to decentralized storage. From here, users can save immutable versions of the site, without relying on centralized services and they're always able to update to the developer's most recent deployment.
 
 Developers no longer need to worry about keeping their front-ends online. Skynet handles decentralized storage, Homescreen handles access and versioning. This is especially important for DeFi and Web3 applications needing a front-end that prioritizes security, censorship resistance, and consistent access to decentralized protocols and smart contracts.
 
@@ -41,15 +41,17 @@ In addition to pinning applications to Skynet, Homescreen uses decentralized sto
 
 For developers to add support for Homescreen, they need to do a few things:
 
-* Confirm the application front-end supports a static deployment on Skynet \(Gatsby & full React Router support coming soon\)
-* Assure APIs and web requests from your app only depend on decentralized protocols that will remain accessible even with future front-end updates. For web3, this usually means interacting with MetaMask or a Skynet portal, not making HTTP requests to your centralized back-end server. 
+* Confirm the application front-end supports a static deployment on Skynet (Gatsby & full React Router support coming soon)
+* Assure APIs and web requests from your app only depend on decentralized protocols that will remain accessible even with future front-end updates. For web3, this usually means interacting with MetaMask or a Skynet portal, not making HTTP requests to your centralized back-end server.&#x20;
 * Add an "Add to Homescreen" button on your project's Releases and README that links to Homescreen
 
 {% hint style="warning" %}
 Sites using centralized APIs may still work with Homescreen, but breaking changes to an API might break older builds that users have saved to Homescreen. This is not considered to be a best practice.
 {% endhint %}
 
-{% page-ref page="adding-homescreen-support-to-an-app.md" %}
+{% content-ref url="adding-homescreen-support-to-an-app.md" %}
+[adding-homescreen-support-to-an-app.md](adding-homescreen-support-to-an-app.md)
+{% endcontent-ref %}
 
 
 
@@ -57,9 +59,14 @@ Sites using centralized APIs may still work with Homescreen, but breaking change
 
 {% embed url="https://blog.sia.tech/announcing-homescreen-decentralized-frontends-for-web3-113a3564530d" %}
 
-{% embed url="https://www.youtube.com/watch?v=jOSXlAVeY7g" caption="Skynet Labs CEO David Vorick introucing Homescreen at EthCC\[4\]. See 12:15." %}
+{% embed url="https://www.youtube.com/watch?v=jOSXlAVeY7g" %}
+Skynet Labs CEO David Vorick introucing Homescreen at EthCC\[4]. See 12:15.
+{% endembed %}
 
-{% embed url="https://homescreen.hns.siasky.net/" caption="Try Homescreen" %}
+{% embed url="https://homescreen.hns.siasky.net/" %}
+Try Homescreen
+{% endembed %}
 
-{% embed url="https://github.com/SkynetLabs/uniswap-interface" caption="Example Repo for showing Homescreen Support  " %}
-
+{% embed url="https://github.com/SkynetLabs/uniswap-interface" %}
+Example Repo for showing Homescreen Support &#x20;
+{% endembed %}

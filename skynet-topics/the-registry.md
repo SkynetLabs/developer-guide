@@ -8,7 +8,7 @@ The Registry is a high-performance key-value store for small amounts of data. Re
 
 Although the registry can be [read](https://sia.tech/docs/#skynet-registry-get) and [written](https://sia.tech/docs/#skynet-registry-post) to using the `skyd` API, `skynet-js` simplifies the process of reading or creating and signing registry entries, as seen in [the documentation](https://siasky.net/docs/#registry).
 
-The registry is intended to be a low-level resource for advanced developers, and byte arrays \(`Uint8Array`\) are used for storing. The max size for custom data is 70 bytes, which is enough for 2 skylinks.
+The registry is intended to be a low-level resource for advanced developers, and byte arrays (`Uint8Array`) are used for storing. The max size for custom data is 70 bytes, which is enough for 2 skylinks.
 
 ### Key Pairs
 
@@ -65,7 +65,7 @@ The Registry might seem limited by itself -- be sure to see MySky Files, SkyDB a
 
 Registry entries are read using `GET` requests to the `skynet/registry` endpoint on web portals or [skyd](https://sia.tech/docs/#skynet-registry-get) instances.
 
-The URL uses a hash of the `dataKey` so the above example can be [accessed here](https://siasky.net/skynet/registry?publickey=ed25519%3A6759d5ced2c0c9b4f308c19ddca7304291754323589e7cf9e417351744ae9465&datakey=056f1ef8df2086e5aa284c1331cea86662be52b2a2deca83fc1683dc91be11a3&timeout=5).
+The URL uses a hash of the `dataKey` so the above example can be [accessed here](https://siasky.net/skynet/registry?publickey=ed25519%3A6759d5ced2c0c9b4f308c19ddca7304291754323589e7cf9e417351744ae9465\&datakey=056f1ef8df2086e5aa284c1331cea86662be52b2a2deca83fc1683dc91be11a3\&timeout=5).
 
 ```javascript
 {
@@ -83,7 +83,7 @@ The URL uses a hash of the `dataKey` so the above example can be [accessed here]
 
 #### Writing to the Registry
 
-To write to the registry, you'll want to repeat the steps utilized in the `setEntry` method. \([See code here.](https://github.com/SkynetLabs/skynet-js/blob/a3d880d768be0ad0fe1be4d29123eb86ce788931/src/registry.ts#L312)\) You'll want to create the entry, sign it with a a private key, then make `POST` request to the registry endpoint with form data that looks like the code below.
+To write to the registry, you'll want to repeat the steps utilized in the `setEntry` method. ([See code here.](https://github.com/SkynetLabs/skynet-js/blob/a3d880d768be0ad0fe1be4d29123eb86ce788931/src/registry.ts#L312)) You'll want to create the entry, sign it with a a private key, then make `POST` request to the registry endpoint with form data that looks like the code below.
 
 ```javascript
 {"publickey":{"algorithm":"ed25519","key":[103,89,213,206,210,192,201,180,243,8,193,157,220,167,48,66,145,117,67,35,88,158,124,249,228,23,53,23,68,174,148,101]},"datakey":"056f1ef8df2086e5aa284c1331cea86662be52b2a2deca83fc1683dc91be11a3","revision":1,"data":[98,97,114],"signature":[130,59,249,195,59,104,17,81,93,161,29,81,93,196,87,7,15,170,203,170,62,155,174,212,8,110,118,251,187,75,93,124,203,147,165,249,21,208,42,166,143,132,56,66,199,113,253,133,149,121,154,81,104,233,103,230,200,95,32,87,179,127,59,5,101,117,137,186,119,97,6,156,112,35,70,202,57,35,143,130,156,226,88,169,111,233,245,170,164,105,77,32,52,134,78,34]}
@@ -91,11 +91,13 @@ To write to the registry, you'll want to repeat the steps utilized in the `setEn
 
 #### Other libraries which support updating the registry
 
-Registry interaction has support in various community libraries including redsolver's [Skynet SDK for Dart](https://github.com/redsolver/skynet), and PowerLoom's [py-skydb](https://github.com/PowerLoom/py-skydb) \(where the registry is used implicitly\).
+Registry interaction has support in various community libraries including redsolver's [Skynet SDK for Dart](https://github.com/redsolver/skynet), and PowerLoom's [py-skydb](https://github.com/PowerLoom/py-skydb) (where the registry is used implicitly).
 
 ## Full Description
 
-{% embed url="https://blog.sia.tech/the-host-registry-building-dynamic-content-on-skynet-ade72ba6f30b" caption="Chris has written a full desciption of the registry, reproduced below." %}
+{% embed url="https://blog.sia.tech/the-host-registry-building-dynamic-content-on-skynet-ade72ba6f30b" %}
+Chris has written a full desciption of the registry, reproduced below.
+{% endembed %}
 
 ### The Host Registry: Building Dynamic Content on Skynet
 
@@ -109,7 +111,7 @@ The key part of the entries is a combination of a public key and a data key wher
 
 #### A quick example — Note To Self
 
-To better understand registry entries, let’s look at an example. [Note-To-Self](https://note-to-self.hns.siasky.net/) is a minimal Skapp that allows a user to set a note, open the Skapp from a different device, and read that note. The Skapp requires users to enter a secret passphrase. This passphrase is used to derive a public-private key pair. So every unique password will have a different key pair.
+To better understand registry entries, let’s look at an example. [Note-To-Self](https://note-to-self.hns.siasky.net) is a minimal Skapp that allows a user to set a note, open the Skapp from a different device, and read that note. The Skapp requires users to enter a secret passphrase. This passphrase is used to derive a public-private key pair. So every unique password will have a different key pair.
 
 Upon submitting a note, the note is uploaded to the portal, and a Skylink is returned to the Skapp. But this Skylink is not enough because the next time we access Note-To-Self from a different browser, it won’t know the Skylink. To work around that, it creates a registry entry that contains the Skylink as the payload. It uses the private key derived from our passphrase to sign it and a constant data key that we know when setting the entry. Any data key will do such as the hash of the string “note”. In this case, the data key is hardcoded into the Skapp, but that’s not a requirement.
 
@@ -125,12 +127,12 @@ As mentioned before, a complete and signed registry entry can be up to 256 bytes
 * Public Key: 33 bytes
 * Expiry: 4 bytes
 * Data Length: 1 byte
-* Data: 0-113 bytes \(usually exactly 34 bytes for a Skylink\)
+* Data: 0-113 bytes (usually exactly 34 bytes for a Skylink)
 * Revision: 8 bytes
 * Type: 1 byte
 * Signature: 64 bytes
 
-We already know what the data key and public key are. The Expiry is used by the host to know when it is safe to prune the entry from the map \(more on that later\). The data is the payload an entity can set. The revision is used to order entry updates. The type serves to distinguish between potentially different entry types in the future, and the signature guarantees the verifiability of the entry’s integrity when fetching it.
+We already know what the data key and public key are. The Expiry is used by the host to know when it is safe to prune the entry from the map (more on that later). The data is the payload an entity can set. The revision is used to order entry updates. The type serves to distinguish between potentially different entry types in the future, and the signature guarantees the verifiability of the entry’s integrity when fetching it.
 
 When setting a registry entry, multiple hosts on the network are updated. Similar to how data is uploaded redundantly, we want to ensure the entry doesn’t get lost. Since file contracts do not cover the registry, we need a deterministic way for hosts to determine which of two presented and signed registry entries should overwrite the other. This is done using two rules.
 
@@ -173,4 +175,3 @@ If you are interested in trying it out yourselves, check out our [developer sect
 Also, stay tuned for our next blog post on how we used the Host Registry to introduce a new feature to Skylinks. Resolver Skylinks allow for a Skylink to point to different content without changing the actual link. Until now, Skylinks could only reference an immutable file on Skynet. With the new Resolver Skylinks, a Skylink can now point to SkyDB data, a MySky File, or other mutable data. It could even point to another Skylink associated with immutable data.
 
 We can’t wait for the huge possibilities for a more flexible DWeb via Resolver Skylinks!
-

@@ -10,43 +10,35 @@ There are a number of ways of assessing the "health" of piece of the Skynet netw
 Health endpoints are not fast and should probably be reserved for developer tools unless used with short timeouts or `nocache` set to false.
 {% endhint %}
 
-{% api-method method="get" host="https://siasky.net" path="/skynet/health/skylink/:skylink" %}
-{% api-method-summary %}
-Skylink Health
-{% endapi-method-summary %}
+{% swagger baseUrl="https://siasky.net" path="/skynet/health/skylink/:skylink" method="get" summary="Skylink Health" %}
+{% swagger-description %}
+The health of a skylink is determined by how many servers are hosting full versions of the skyfile's base sector. By default, a new upload should have a value of 10. This method queries all hosts when determining how many copies of the base sector are stored across the network.
 
-{% api-method-description %}
-The health of a skylink is determined by how many servers are hosting full versions of the skyfile's base sector. By default, a new upload should have a value of 10. This method queries all hosts when determining how many copies of the base sector are stored across the network.  
-  
+\
+
+
+
+
+\
+
+
 Portal will wait the entire duration of the timeout for hosts to respond, so longer timeouts mean higher accuracy.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="skylink" type="string" required=true %}
+{% swagger-parameter in="path" name="skylink" type="string" %}
 Base64 Skylink
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="timeout" type="number" required=false %}
-Timeout in seconds. Higher is more accurate. \(Default: 30, Max: 300\)
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="query" name="timeout" type="number" %}
+Timeout in seconds. Higher is more accurate. (Default: 30, Max: 300)
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Base sector redundancy shows how many hosts contain full versions of the file's base sector.  
-  
-`fanouteffectiveredundancy` — the redundancy of the fanout, represented as the worst redundancy of any of the chunks  
-`fanoutdatapieces` — the number of data pieces defined by the erasure coding of the fanout. Default is 10 for the 10-of-30 erasure coding that results in 3x redundancy  
-`fanoutparitypieces` — the number of parity pieces as defined by the erasure coding of the fanout. Default is 20 for the 10-of-30 erasure coding that results in 3x redundancy.  
-`fanoutredundancy` — an array of all chunk redundancies. So you can see if there is a single chunk that is bringing down the redundancy or if they are all a similar redundancy.
-{% endapi-method-response-example-description %}
+{% swagger-response status="200" description="Base sector redundancy shows how many hosts contain full versions of the file's base sector.
 
+fanouteffectiveredundancy — the redundancy of the fanout, represented as the worst redundancy of any of the chunks
+fanoutdatapieces — the number of data pieces defined by the erasure coding of the fanout. Default is 10 for the 10-of-30 erasure coding that results in 3x redundancy
+fanoutparitypieces — the number of parity pieces as defined by the erasure coding of the fanout. Default is 20 for the 10-of-30 erasure coding that results in 3x redundancy.
+fanoutredundancy — an array of all chunk redundancies. So you can see if there is a single chunk that is bringing down the redundancy or if they are all a similar redundancy." %}
 ```javascript
 {
     "basesectorredundancy": 18,
@@ -58,52 +50,96 @@ Base sector redundancy shows how many hosts contain full versions of the file's 
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://siasky.net" path="/skynet/health/entry" %}
-{% api-method-summary %}
-Registry Entry Health by publickey & datakey
-{% endapi-method-summary %}
+{% swagger baseUrl="https://siasky.net" path="/skynet/health/entry" method="get" summary="Registry Entry Health by publickey & datakey" %}
+{% swagger-description %}
+The health of a registry entry is determined by the number of hosts storing the most current version of the registry entry.
 
-{% api-method-description %}
-The health of a registry entry is determined by the number of hosts storing the most current version of the registry entry.  
-  
-This method queries all hosts to determine:  
-- `numbestentries` – Number of hosts on network with the "best" entry  
-- `numbestprimaryentries` – Number of best primary entries on network _\(Not yet in use.\)_  
-- `numentries` – Total number of entries found across the network  
-- `revisionnumber`– Current revision number of a "best" entry \(highest on network\)  
-  
+\
+
+
+
+
+\
+
+
+This method queries all hosts to determine:
+
+\
+
+
+\- 
+
+`numbestentries`
+
+ – Number of hosts on network with the "best" entry
+
+\
+
+
+\- 
+
+`numbestprimaryentries`
+
+ – Number of best primary entries on network 
+
+_(Not yet in use.)_
+
+\
+
+
+\- 
+
+`numentries`
+
+ – Total number of entries found across the network
+
+\
+
+
+\- 
+
+`revisionnumber`
+
+– Current revision number of a "best" entry (highest on network)
+
+\
+
+
+
+
+\
+
+
 Portal will wait the entire duration of the timeout for hosts to respond, so longer timeouts mean higher accuracy.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="publickey" type="string" required=true %}
-Public key of registry entry. Should be prefixed with `ed25519:`
-{% endapi-method-parameter %}
+{% swagger-parameter in="path" name="publickey" type="string" %}
+Public key of registry entry. Should be prefixed with 
 
-{% api-method-parameter name="datakey" type="string" required=true %}
-Data key of registry entry \(Not pre-hashed as used by `skynet-js`\)
-{% endapi-method-parameter %}
+`ed25519:`
+{% endswagger-parameter %}
 
-{% api-method-parameter name="timeout" type="number" required=false %}
-Timeout in seconds. Higher is more accurate.  
-\(Default: 30, Max: 300\)
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="path" name="datakey" type="string" %}
+Data key of registry entry (Not pre-hashed as used by 
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Define each of these.
-{% endapi-method-response-example-description %}
+`skynet-js`
 
+)
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="timeout" type="number" %}
+Timeout in seconds. Higher is more accurate.
+
+\
+
+
+(Default: 30, Max: 300)
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Define each of these." %}
 ```javascript
 {
     "numbestentries": 29,
@@ -112,39 +148,31 @@ Define each of these.
     "revisionnumber": 19
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://siasky.net" path="/skynet/health/entry" %}
-{% api-method-summary %}
-Registry Entry Health by entryid
-{% endapi-method-summary %}
+{% swagger baseUrl="https://siasky.net" path="/skynet/health/entry" method="get" summary="Registry Entry Health by entryid" %}
+{% swagger-description %}
+Another way of accessing the health of a registry entry, using an entry's 
 
-{% api-method-description %}
-Another way of accessing the health of a registry entry, using an entry's `entryid`. See above for response details. _\(`entryid` is a hash of the of the publickey and datakey used for looking up registry entries and is used for creating resolver skylinks.\)_
-{% endapi-method-description %}
+`entryid`
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="entryid" type="string" required=true %}
-entryid of the registry entry _\(See description.\)_
-{% endapi-method-parameter %}
+. See above for response details. 
 
-{% api-method-parameter type="number" name="timeout" %}
-Timeout in seconds. Higher is more accurate. \(Default: 30, Max: 300\)
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+_(`entryid` is a hash of the of the publickey and datakey used for looking up registry entries and is used for creating resolver skylinks.)_
+{% endswagger-description %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
+{% swagger-parameter in="path" name="entryid" type="string" %}
+entryid of the registry entry 
 
-{% endapi-method-response-example-description %}
+_(See description.)_
+{% endswagger-parameter %}
 
+{% swagger-parameter in="path" name="timeout" type="number" %}
+Timeout in seconds. Higher is more accurate. (Default: 30, Max: 300)
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "numbestentries": 29,
@@ -153,35 +181,19 @@ Timeout in seconds. Higher is more accurate. \(Default: 30, Max: 300\)
     "revisionnumber": 19
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://siasky.net" path="/skynet/stats" %}
-{% api-method-summary %}
-Portal Server Stats
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://siasky.net" path="/skynet/stats" method="get" summary="Portal Server Stats" %}
+{% swagger-description %}
 The health of a server in a portal can be accessed by its performance and key settings in its Sia node.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="nocache" type="boolean" required=false %}
-Bypass cached results. \(Default: false\)
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="path" name="nocache" type="boolean" %}
+Bypass cached results. (Default: false)
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "basesectorupload15mdatapoints": 95.25281700939354,
@@ -226,35 +238,19 @@ Bypass cached results. \(Default: false\)
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://siasky.net" path="/health-check" %}
-{% api-method-summary %}
-Portal Server Health Check
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://siasky.net" path="/health-check" method="get" summary="Portal Server Health Check" %}
+{% swagger-description %}
 Gets the results of a variety of internal checks on a portal server to see if the basic behavior is working correctly and if the server is "disabled."
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="nocache" type="boolean" required=false %}
-Bypass cached results. \(Default: false\)
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="path" name="nocache" type="boolean" %}
+Bypass cached results. (Default: false)
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "disabled": false,
@@ -335,8 +331,5 @@ Bypass cached results. \(Default: false\)
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

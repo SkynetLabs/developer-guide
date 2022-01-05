@@ -2,26 +2,21 @@
 
 ## Overview
 
-At the end of this section, you should have the DNS records added for the new server, the server initialized with a user `user`, and the `root` \(or other `sudo`\) user removed.
+At the end of this section, you should have the DNS records added for the new server, the server initialized with a user `user`, and the `root` (or other `sudo`) user removed.
 
-## DNS
+## Prerequisites&#x20;
 
-Each server needs two A records. One A record that points from `<server name>.domain` to its IP address, and one wildcard A record that points from `*.<server name>.domain` to `<server name>.domain`.
+### DNS
 
-**Example**:
-
-| Record | Type | Value |
-| :--- | :--- | :--- |
-| us-west.siasky.net | A | XX.XX.XX.XX |
-| \*.us-west.siasky.net | A | us-west.siasky.net |
-
-## Prerequisites 
+You should have completed the [DNS Setup](dns-setup.md).
 
 ### LastPass
 
 As mentioned in the [requirements](../requirements.md#applications) at the beginning of this section, many ansible scripts use LastPass for managing server credentials and common files. If you haven't created a LastPass account yet you will need to create one now.
 
-In your LastPass account, you will then need to create an entry for the server as seen below. Updating `<server name>` with the name of your server, i.e. `us-west`, and `domain` with your domain, i.e. `siasky.net`. Ansible will pull this information from LastPass in order to create the user `user` on the server with the provided password.
+In your LastPass account, you will then need to create an entry for the server as seen below. Updating `<server name>` with the name of your server, i.e. `us-west`, and `domain` with your domain, i.e. `siasky.net`. Ansible will pull this information from LastPass in order to create the user `user` on the server with the provided password.&#x20;
+
+If you are setting up a single server portal you can leave out the server name and just use your domain as you did in the DNS Setup.
 
 ![](../../.gitbook/assets/screen-shot-2021-08-25-at-4.39.55-pm.png)
 
@@ -37,4 +32,3 @@ To set up the portal, you will need to run the [portal-setup-initial.sh](https:/
 * Adding your server to your `host.ini` file
 
 After successfully running the [portal-setup-initial.sh](https://github.com/SkynetLabs/ansible-playbooks#playbook-portals-setup-initial) script you are ready to continue on to the [Single Portal Setup](single-portal-setup.md).
-
