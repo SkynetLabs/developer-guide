@@ -4,6 +4,10 @@ description: Below are the requirements for a Public Web Portal server.
 
 # Requirements
 
+## Server(s)
+
+In order to run a portal, you will need 1 or more servers.&#x20;
+
 ## Hardware
 
 The following are the recommendations for hardware requirements.&#x20;

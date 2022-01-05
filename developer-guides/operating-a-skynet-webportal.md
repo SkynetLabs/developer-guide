@@ -14,9 +14,9 @@ It is very uncommon that a project would _need_ to run a webportal. If you're bu
 
 Running a web portal consists of 3 major services
 
-* \*\*\*\*[**skyd**](https://gitlab.com/SkynetLabs/skyd) – the Skynet daemon used for interacting with the Sia and Skynet networks
-* \*\*\*\*[**skynet-webportal**](https://github.com/SkynetLabs/skynet-webportal) – the webportal stack used for exposing skyd to the web
-* \*\*\*\*[**skynet-accounts**](https://github.com/SkynetLabs/skynet-accounts) – the service used for creating and maintaining user portal accounts
+* ****[**skyd**](https://gitlab.com/SkynetLabs/skyd) – the Skynet daemon used for interacting with the Sia and Skynet networks
+* ****[**skynet-webportal**](https://github.com/SkynetLabs/skynet-webportal) – the webportal stack used for exposing skyd to the web
+* ****[**skynet-accounts**](https://github.com/SkynetLabs/skynet-accounts) – the service used for creating and maintaining user portal accounts
 
 ## Getting Started
 
@@ -24,5 +24,4 @@ Running a web portal consists of 3 major services
 As of 08/25/2021, we are within weeks of releasing tooling and documentation for making the process of starting and running a portal much easier.
 {% endhint %}
 
-Please see the documentation in the [Webportal Management](../webportal-management/requirements.md) section to get started.
-
+Please see the documentation in the [Webportal Management](../webportal-management/requirements/) section to get started.

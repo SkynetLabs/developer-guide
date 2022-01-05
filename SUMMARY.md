@@ -50,7 +50,8 @@
 ## WEBPORTAL MANAGEMENT
 
 * [Overview](webportal-management/overview.md)
-* [Requirements](webportal-management/requirements.md)
+* [Requirements](webportal-management/requirements/README.md)
+  * [LastPass](webportal-management/requirements/lastpass.md)
 * [Ansible](webportal-management/ansible.md)
 * [Setup](webportal-management/setup/README.md)
   * [DNS Setup](webportal-management/setup/dns-setup.md)
