@@ -51,6 +51,7 @@
 
 * [Overview](webportal-management/overview.md)
 * [Prerequisites](webportal-management/requirements.md)
+  * [Domain Name](webportal-management/requirements/domain-name.md)
   * [LastPass](webportal-management/requirements/lastpass.md)
   * [Ansible](webportal-management/requirements/ansible.md)
   * [AWS](webportal-management/requirements/aws.md)
