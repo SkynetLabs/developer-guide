@@ -6,7 +6,7 @@ Currently, a number of the ansible scripts use LastPass for managing server cred
 
 Within LastPass, ansible is going to look for a folder where you are storing portal-related information. You can call this folder whatever you like, or you can use the default `Shared-Ansible`.
 
-{% hint style="warning" %}
+{% hint style="info" %}
 This folder needs to be a `Shared` folder in LastPass for ansible to be able to properly interact with it. When you create a shared folder in LastPass it will automatically add the `Shared` prefix.
 {% endhint %}
 
