@@ -26,7 +26,7 @@ portal_accounts_version: "deploy-2021-08-09"
 ### Lastpass
 
 {% hint style="warning" %}
-This LastPass section should be removed once the .env file generate is updated and handles all yml files. These fields should be input vars in the `config.yml` file and the mgkey should be saved in lastpass but then ansible should copy it into the yml file.
+This LastPass section should be removed and updated to a `config.yml` section once the .env file generate is updated and handles all yml files. These fields should be input vars in the `config.yml` file and the mgkey should be saved in lastpass but then ansible should copy it into the yml file. Also ansible should be able to generate the mgkey automatically if one doesn't exist.
 {% endhint %}
 
 In order for mongo to start, we need to set some fields in our `cluster-prod.yml` file.  Update the following fields:
