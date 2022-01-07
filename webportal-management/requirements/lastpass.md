@@ -54,7 +54,7 @@ Under the `portal-cluster-configs` subfolder, create a `cluster-prod.yml` file a
 accounts_email_uri: 
 cookie_enc_key:
 cookie_hash_key:
-mongo_db_mgkey:
+mongo_db_mgkey: |
 portal_cluster_domain: 
 skynet_db_user: 
 skynet_db_pass: 
@@ -65,4 +65,4 @@ stripe_secret_key:
 stripe_webhook_secret: 
 ```
 
-You can leave these fields blank for now, and we will come back to them later.&#x20;
+You can leave these fields blank for now, with the exception of the `|` for the `mongo_db_mgkey` field, and we will come back to them later.&#x20;

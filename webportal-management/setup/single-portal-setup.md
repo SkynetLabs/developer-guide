@@ -6,11 +6,13 @@ At the end of this section, you will have a running `skyd` instance that is read
 
 ## Prerequisites
 
-The only prerequisite for this step is to define the version of the `skyd`, `skynet-webportal`, and `skynet-accounts` repos that you wish to install in your `portal-versions.yml` file.
+### Ansible config.yml
+
+The only prerequisite for this step is to define the version of the `skyd`, `skynet-webportal`, and `skynet-accounts` repos that you wish to install in your `config.yml` file.
 
 **Example**&#x20;
 
-`ansible-playbooks/my-vars/portal-versions.yml`
+`ansible-playbooks/my-vars/config.yml`
 
 ```
 ---
@@ -19,6 +21,55 @@ The only prerequisite for this step is to define the version of the `skyd`, `sky
 portal_repo_version: "deploy-2021-08-24"
 portal_skyd_version: "deploy-2021-08-24"
 portal_accounts_version: "deploy-2021-08-09"
+```
+
+### Lastpass
+
+{% hint style="warning" %}
+This LastPass section should be removed once the .env file generate is updated and handles all yml files. These fields should be input vars in the `config.yml` file and the mgkey should be saved in lastpass but then ansible should copy it into the yml file.
+{% endhint %}
+
+In order for mongo to start, we need to set some fields in our `cluster-prod.yml` file.  Update the following fields:
+
+```
+skynet_db_user: admin
+skynet_db_pass: <strong password>
+skynet_db_replicaset: skynet 
+```
+
+Set the `skynet_db_pass` to a strong password, like one generated from [https://passwordsgenerator.net/](https://passwordsgenerator.net).
+
+Next, we need to generate a keyfile for mongodb. Generate a `mgkey` by running the following command:
+
+```
+openssl rand -base64 756 > mgkey
+sed -e 's/^/  /' mgkey > mgkey_yml
+```
+
+This will create two files, a `mgkey` and a `mgkey_yml` file.  The `mgkey_yml` file is the same as the `mgkey` file but with two spaces prepended to each line. These spaces are for proper `yml` formatting.
+
+Example:
+
+```
+$ cat mgkey
+asdf
+asdf
+asdf
+$ cat mgkey_yml
+  asdf
+  asdf
+  asdf
+```
+
+Open the `mgkey` file, and copy its contents into LastPass as a secure note titled `mgkey`.
+
+Open the `mgkey_yml` file, and copy its contents into the `cluster-prod.yml` file under `mongo_db_mgkey`.
+
+```
+mongo_db_mgkey: |
+  asdf
+  asdf
+  asdf
 ```
 
 ## Portal Setup Following
