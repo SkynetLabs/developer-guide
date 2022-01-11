@@ -56,6 +56,7 @@
   * [Ansible](webportal-management/requirements/ansible.md)
   * [AWS](webportal-management/requirements/aws.md)
   * [Hosting Provider](webportal-management/requirements/hosting-provider.md)
+  * [SiaCoin](webportal-management/requirements/siacoin.md)
 * [Setup](webportal-management/setup/README.md)
   * [DNS Setup](webportal-management/setup/dns-setup.md)
   * [Server Initialization](webportal-management/setup/server-initialization.md)
