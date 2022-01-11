@@ -2,7 +2,17 @@
 
 ## Overview
 
-At the end of this section, you will have a running `skyd` instance that is ready to form contracts once you send it siacoins.
+At the end of this section, you will have a running `skyd` instance that is ready to form contracts once you send it siacoins and a running `mongo` container.
+
+This can be confirmed by running the `docker ps` command on your server and checking that it looks like the following:
+
+```
+$ ssh user@mydomain.com
+$ docker ps
+CONTAINER ID   IMAGE                  COMMAND                  CREATED              STATUS              PORTS                                           NAMES
+a3614009e7b7   skynet-webportal_sia   "./run.sh"               About a minute ago   Up About a minute   9980/tcp                                        sia
+7cde488f0fd0   mongo:4.4.1            "docker-entrypoint.s…"   3 days ago           Up 3 days           0.0.0.0:27017->27017/tcp, :::27017->27017/tcp   mongo
+```
 
 ## Prerequisites
 
