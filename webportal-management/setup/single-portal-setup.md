@@ -51,6 +51,10 @@ skynet_db_pass: <strong password>
 skynet_db_replicaset: skynet 
 ```
 
+{% hint style="info" %}
+When creating your `cluster-prod.yml` file, keep in mind that the `prod` suffix in the name is the id of your cluster, as defined by the `portal_cluster_id=prod` entry in your hosts.ini file, located in the `ansible-private` repository. Please see [these docs](https://github.com/SkynetLabs/ansible-playbooks#requirements) for details.
+{% endhint %}
+
 Set the `skynet_db_pass` to a strong password, like one generated from [https://passwordsgenerator.net/](https://passwordsgenerator.net).
 
 Next, we need to generate a keyfile for mongodb. Generate a `mgkey` by running the following command:
