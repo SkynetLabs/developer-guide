@@ -18,9 +18,9 @@ The only prerequisite for this step is to define the version of the `skyd`, `sky
 ---
 # Set skynet-webportal, skyd, accounts versions by entering git branch, tag or
 # commit
-portal_repo_version: "deploy-2021-08-24"
-portal_skyd_version: "deploy-2021-08-24"
-portal_accounts_version: "deploy-2021-08-09"
+portal_repo_version: "deploy-2021-12-21"
+portal_skyd_version: "deploy-2021-12-21"
+portal_accounts_version: "deploy-2021-12-21"
 ```
 
 ### Lastpass
