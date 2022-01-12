@@ -15,7 +15,7 @@ Currently you should have `root` (or root like) user access to your server. Ansi
 
 #### Automatically
 
-Ansible can generate Linux user password and save user credentials to LastPass automatically - in this case you can skip next chapter.
+Ansible can generate Linux user password and save user credentials to LastPass automatically - in this case you can skip the next chapter.
 
 #### Setting user credentials manually (optional)
 
