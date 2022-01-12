@@ -108,7 +108,7 @@ After the initial portal setup, you should have the `sia` and `mongo` docker con
 Sia container, I thought we were running skyd? You are right, we are running skyd. The Docker container is still called Sia for some backwards compatibility but we might fix this in the future.&#x20;
 {% endhint %}
 
-There are several other docker services that the portal can run. To launch these docker services, simply update your `PORTAL_MODULES` variable in the `.env` file that is located in the `skynet-webportal` directory. The options are documented in the `.env` file, but here is an example of the options:
+There are several other docker services that the portal can run. To launch these docker services, simply update your `PORTAL_MODULES` variable in the `<server>.yml` file in LastPass. The options are documented [here](https://github.com/SkynetLabs/ansible-playbooks/blob/master/playbooks/templates/.env.j2#L37), but here is an example of the options:
 
 ```
 # Possible choices:
@@ -120,7 +120,7 @@ There are several other docker services that the portal can run. To launch these
 # - 'u': Abuse Scanner (https://github.com/SkynetLabs/abuse-scanner)
 ```
 
-For most portals, it is recommended to run all the services but Jaegar. Jaegar is a debugging service, so doesn't need to be run unless you plan on debugging the portal code itself. So the `PORTAL_MODULES` in the `.env` file should be updated to the following:
+For most portals, it is recommended to run all the services but Jaegar. Jaegar is a debugging service, so doesn't need to be run unless you plan on debugging the portal code itself. So the `PORTAL_MODULES` should be updated to the following:
 
 ```
 PORTAL_MODULES=absu 
