@@ -9,7 +9,9 @@ At the end of this section, you should have the server initialized with a user `
 * All [Prerequisities](server-initialization.md#prerequisites) completed
 * [DNS Setup](dns-setup.md) completed
 
-### LastPass
+### Linux user credentials in LastPass (optional)
+
+Currently you should have `root` (or root like user access to your server). Ansible will create a Linux user on your server (with default username \`user\`). Ansible can generate user password and save user credentials to LastPass automatically - in this case you can skip the rest of this chapter or you can set user password yourself - in this case follow the rest of the chapter.
 
 In your LastPass account, you will then need to create an entry for the server as seen below. Updating `<server name>` with the name of your server, i.e. `us-west`, and `domain` with your domain, i.e. `siasky.net`. Ansible will pull this information from LastPass in order to create the user `user` on the server with the provided password.&#x20;
 
