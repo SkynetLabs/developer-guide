@@ -61,7 +61,6 @@
   * [DNS Setup](webportal-management/setup/dns-setup.md)
   * [Server Initialization](webportal-management/setup/server-initialization.md)
   * [Single Portal Setup](webportal-management/setup/single-portal-setup.md)
-  * [Accounts](webportal-management/setup/accounts.md)
   * [Deployment](webportal-management/setup/deployment.md)
 * [Upgrading](webportal-management/upgrading.md)
 * [Retiring Webportal Servers](webportal-management/retiring-webportal-servers.md)
