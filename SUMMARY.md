@@ -62,6 +62,7 @@
   * [Server Initialization](webportal-management/setup/server-initialization.md)
   * [Single Portal Setup](webportal-management/setup/single-portal-setup.md)
   * [Deployment](webportal-management/setup/deployment.md)
+  * [Abuse Handling](webportal-management/setup/abuse-handling.md)
 * [Upgrading](webportal-management/upgrading.md)
 * [Retiring Webportal Servers](webportal-management/retiring-webportal-servers.md)
 * [Handling Abuse Requests](webportal-management/handling-abuse-requests.md)
