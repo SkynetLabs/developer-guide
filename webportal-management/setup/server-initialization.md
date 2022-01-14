@@ -19,7 +19,7 @@ Ansible can generate Linux user password and save user credentials to LastPass a
 
 #### Setting user credentials manually (optional)
 
-You can set user password yourself.
+If you prefer to manually create the login information, you can do so.
 
 In your LastPass account, you will then need to create an entry for the server as seen below. Updating `<server name>` with the name of your server, i.e. `us-west`, and `domain` with your domain, i.e. `siasky.net`. Ansible will pull this information from LastPass in order to create the user `user` on the server with the provided password.&#x20;
 
