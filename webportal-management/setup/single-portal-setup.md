@@ -33,20 +33,6 @@ portal_skyd_version: "deploy-2021-12-21"
 portal_accounts_version: "deploy-2021-12-21"
 ```
 
-### Ansible server config
-
-In order to initialize the server, we need to define its config in LastPass under `Shared-Ansible/portal-server-configs` in a secure note with name `<server name>.yml`, e.g. `server1.yml`.
-
-```
-hsd_api_key:
-portal_modules: m
-portal_name: server1.myportal.net
-sia_api_port: 
-sia_wallet_password: 
-sia_wallet_seed: 
-skynet_server_api: https://server1.myportal.net
-```
-
 ### Mongo Settings in Lastpass
 
 {% hint style="warning" %}
