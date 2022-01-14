@@ -52,13 +52,8 @@ Under the `portal-cluster-configs` subfolder, create a `cluster-prod.yml` file a
 
 ```
 accounts_email_uri: 
-cookie_enc_key:
-cookie_hash_key:
 mongo_db_mgkey: |
 portal_cluster_domain: 
-skynet_db_user: 
-skynet_db_pass: 
-skynet_db_replicaset: 
 stripe_api_key: 
 stripe_publishable_key: 
 stripe_secret_key: 
@@ -66,3 +61,42 @@ stripe_webhook_secret:
 ```
 
 You can leave these fields blank for now, with the exception of the `|` for the `mongo_db_mgkey` field, and we will come back to them later.&#x20;
+
+### portal-server-configs
+
+Under the `portal-server-configs` subfolder, create a `<server>.yml` file and put the following fields in the file.&#x20;
+
+```
+domain_name: 
+hsd_api_key: 
+portal_modules: 
+portal_name: 
+```
+
+The `domain_name` and `portal_name` can be set to the domain you plan to host your server at.&#x20;
+
+For example, if you are running a signle server portal, with the domain `mydomain.com`. You might identify the server as `sev1` and name create the file like so:
+
+```
+sev1.yml
+
+domain_name: mydomain.com
+hsd_api_key: 
+portal_modules: 
+portal_name: mydomain.com
+```
+
+Another example, is if you are running a multi-server portal and `sev1` is just the first of many servers. The file would look like this:
+
+```
+sev1.yml
+
+domain_name: sev1.mydomain.com
+hsd_api_key: 
+portal_modules: 
+portal_name: sev1.mydomain.com
+```
+
+{% hint style="info" %}
+The `domain_name` should match the A records you will be setting up in the DNS Setup section.
+{% endhint %}

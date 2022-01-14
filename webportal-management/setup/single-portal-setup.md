@@ -38,22 +38,30 @@ portal_accounts_version: "deploy-2021-12-21"
 In order to initialize the server, we need to define its config in LastPass under `Shared-Ansible/portal-server-configs` in a secure note with name `<server name>.yml`, e.g. `server1.yml`.
 
 ```
-hsd_api_key: <your handshake api key>
-portal_modules: a
+hsd_api_key:
+portal_modules: m
 portal_name: server1.myportal.net
-sia_api_port: 9980
+sia_api_port: 
 sia_wallet_password: 
 sia_wallet_seed: 
 skynet_server_api: https://server1.myportal.net
 ```
 
-### Lastpass
+### Mongo Settings in Lastpass
 
 {% hint style="warning" %}
 This LastPass section should be removed and updated to a `config.yml` section once the .env file generate is updated and handles all yml files. These fields should be input vars in the `config.yml` file and the mgkey should be saved in lastpass but then ansible should copy it into the yml file. Also ansible should be able to generate the mgkey automatically if one doesn't exist.
 {% endhint %}
 
-In order for mongo to start, we need to set some fields in our `cluster-prod.yml` file.  Update the following fields:
+{% hint style="info" %}
+When creating your `cluster-prod.yml` file, keep in mind that the `prod` suffix in the name is the id of your cluster, as defined by the `portal_cluster_id=prod` entry in your hosts.ini file, located in the `ansible-private` repository. Please see [these docs](https://github.com/SkynetLabs/ansible-playbooks#requirements) for details.
+{% endhint %}
+
+In order for mongo to start, we need to set some fields in our `cluster-prod.yml` file. &#x20;
+
+#### Optional
+
+The following fields can be set manually, or if they are left blank, ansible will use the defaults and autogenerate a strong password.
 
 ```
 skynet_db_user: admin
@@ -61,11 +69,9 @@ skynet_db_pass: <strong password>
 skynet_db_replicaset: skynet 
 ```
 
-{% hint style="info" %}
-When creating your `cluster-prod.yml` file, keep in mind that the `prod` suffix in the name is the id of your cluster, as defined by the `portal_cluster_id=prod` entry in your hosts.ini file, located in the `ansible-private` repository. Please see [these docs](https://github.com/SkynetLabs/ansible-playbooks#requirements) for details.
-{% endhint %}
+If you choose to manually set the `skynet_db_pass,` make sure it is set to a strong password, like one generated from [https://passwordsgenerator.net/](https://passwordsgenerator.net).
 
-Set the `skynet_db_pass` to a strong password, like one generated from [https://passwordsgenerator.net/](https://passwordsgenerator.net).
+#### Required
 
 Next, we need to generate a keyfile for mongodb. Generate a `mgkey` by running the following command:
 
