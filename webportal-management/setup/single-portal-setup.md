@@ -140,6 +140,21 @@ Once your `portal-versions.yml` file is ready, it is time to run the [portals-se
 **NOTE:** There is currently a bug in the ansible playbook that affects the initial server for a portal and the mongo replicaset will not be initiated properly. Once fix this step will be removed from the documentation.
 {% endhint %}
 
+Ansible `portal-setup-following` playbook will stop later with this error log:
+
+```
+...
+TASK [Fail on all wallet unlock errors except rescan in progress, which is handled later] *********************************************************************************************************************************************
+fatal: [...]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Error unlocking Sia wallet:
+...
+```
+
 The mongo container will start up without error but the replicaset will not be initialized. You can confirm this error by checking the mongo container logs for initialization errors.
 
 ```
@@ -149,10 +164,9 @@ docker logs mongo
 To fix the issue, and initialize mongo, run the following commands:
 
 ```
-# Get into the mongo container
-docker exec -it mongo mongo -u admin
-
-# Enter the password when prompted. Check LastPass for the password.
+# Navigate to webportal directory and get into the mongo container
+cd ~/skynet-webportal
+. .env && docker exec -it mongo mongo -u admin -p $SKYNET_DB_PASS
 
 # Initiate the replicaset
 # <serverdomain> should be the domain of the server. So mydomain.com for a single
