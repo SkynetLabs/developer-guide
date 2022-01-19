@@ -124,7 +124,7 @@ In order to use accounts, the portal will need to issue and sign [JWT](https://a
 
 ## Portal Setup Following
 
-Once your `portal-versions.yml` file is ready, it is time to run the [portal-setup-following.sh](https://github.com/SkynetLabs/ansible-playbooks#playbook-portals-setup-following) script and don't forget to add the `portal-versions.yml` as a parameter.
+Once your `portal-versions.yml` file is ready, it is time to run the [portals-setup-following.sh](https://github.com/SkynetLabs/ansible-playbooks#playbook-portals-setup-following) script and don't forget to add the `portal-versions.yml` as a parameter.
 
 **Example**
 
@@ -133,6 +133,41 @@ Once your `portal-versions.yml` file is ready, it is time to run the [portal-set
 {% hint style="info" %}
 **NOTE** the first run of this script will timeout and fail. This is expected. Please see the below sections on options to handle completing this step.
 {% endhint %}
+
+#### MongoDB Replicaset Initialization
+
+{% hint style="danger" %}
+**NOTE:** There is currently a bug in the ansible playbook that affects the initial server for a portal and the mongo replicaset will not be initiated properly. Once fix this step will be removed from the documentation.
+{% endhint %}
+
+The mongo container will start up without error but the replicaset will not be initialized. You can confirm this error by checking the mongo container logs for initialization errors.
+
+```
+docker logs mongo
+```
+
+To fix the issue, and initialize mongo, run the following commands:
+
+```
+# Get into the mongo container
+docker exec -it mongo mongo -u admin
+
+# Enter the password when prompted. Check LastPass for the password.
+
+# Initiate the replicaset
+# <serverdomain> should be the domain of the server. So mydomain.com for a single
+# server, or sev1.mydomain.com for a multi-server portal.
+rs.initiate(
+  {
+    _id : "skynet",
+    members: [
+      { _id : 0, host : "<serverdomain>:27017" },
+    ]
+  }
+)
+```
+
+Now that mongo is properly initialized, re-run the `portals-setup-following.sh` ansible playbook.
 
 ### Bootstrapping Consensus
 
