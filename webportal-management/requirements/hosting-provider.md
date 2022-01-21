@@ -24,17 +24,23 @@ High limit or unlimited bandwidth is encouraged. Bandwidth usage is of course hi
 
 The following are the recommendations for hardware requirements.&#x20;
 
-#### CPU
+{% hint style="info" %}
+**NOTE:** the requirements are listed in order of importance. SSD is the most important, RAM is second, and CPU is last. Our experience has been that, unless you are building a custom server, by the time you have selected your SSD requirements and RAM requirements, most hosting providers only have a few or even just one option for CPU so do the best you can but don't worry too much about how close you are to matching the recommendation on CPU.
+{% endhint %}
 
-Intel Xeon E-2136 or AMD Ryzen 5 3600 CPU or better.
+#### Storage
+
+500GB SSD/NVMe or more. SSD is required, disk space will be most impacted by the amount of logging the server does.&#x20;
 
 #### RAM
 
 32GB of RAM or more.
 
-#### Storage
+#### CPU
 
-500GB SSD/NVMe or more. SSD is required, disk space will be most impacted by the amount of logging the server does.&#x20;
+Intel Xeon E-2136 or AMD Ryzen 5 3600 CPU or better.
+
+
 
 ## Install OS
 
