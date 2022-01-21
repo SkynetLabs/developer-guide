@@ -25,15 +25,15 @@ Share-Ansible/
    portal-server-configs/
 ```
 
-## Files
+## Secure Notes
 
 {% hint style="warning" %}
-This Files section is currently a manual process that needs to be moved to ansible.
+This Secure Notes section is currently a manual process that needs to be moved to ansible.
 {% endhint %}
 
 ### portal-common-configs
 
-Under the `portal-common-configs` subfolder, create a `common.yml` file and put the following fields in the file.
+Under the `portal-common-configs` subfolder, create a `common.yml` secure note and put the following fields in the secure note.
 
 ```
 aws_access_key: 
@@ -52,7 +52,7 @@ You can leave these fields blank for now, and we will come back to them later.&#
 
 ### portal-cluster-configs
 
-Under the `portal-cluster-configs` subfolder, create a `cluster-prod.yml` file and put the following fields in the file.
+Under the `portal-cluster-configs` subfolder, create a `cluster-prod.yml` secure note and put the following fields in the secure note.
 
 ```
 accounts_email_uri: 
@@ -68,7 +68,7 @@ You can leave these fields blank for now, with the exception of the `|` for the 
 
 ### portal-server-configs
 
-Under the `portal-server-configs` subfolder, create a `<server>.yml` file and put the following fields in the file.&#x20;
+Under the `portal-server-configs` subfolder, create a `<server>.yml` secure note and put the following fields in the secure note.&#x20;
 
 ```
 domain_name: 
@@ -79,7 +79,7 @@ portal_name:
 
 The `domain_name` and `portal_name` can be set to the domain you plan to host your server at.&#x20;
 
-For example, if you are running a signle server portal, with the domain `mydomain.com`. You might identify the server as `sev1` and name create the file like so:
+For example, if you are running a signle server portal, with the domain `mydomain.com`. You might identify the server as `sev1` and name create the secure note like so:
 
 ```
 sev1.yml
@@ -90,7 +90,7 @@ portal_modules:
 portal_name: mydomain.com
 ```
 
-Another example, is if you are running a multi-server portal and `sev1` is just the first of many servers. The file would look like this:
+Another example, is if you are running a multi-server portal and `sev1` is just the first of many servers. The secure note would look like this:
 
 ```
 sev1.yml
