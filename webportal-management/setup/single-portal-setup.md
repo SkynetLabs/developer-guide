@@ -2,7 +2,7 @@
 
 ## Overview
 
-At the end of this section, you will have a running `skyd` instance that is ready to form contracts once you send it siacoins and a running `mongo` container.
+At the end of this section, you will have a running `skyd` instance running in the `sia` container that is ready to form contracts once you send it siacoins and a running `mongo` container.
 
 This can be confirmed by running the `docker ps` command on your server and checking that it looks like the following:
 
@@ -13,6 +13,10 @@ CONTAINER ID   IMAGE                  COMMAND                  CREATED          
 a3614009e7b7   skynet-webportal_sia   "./run.sh"               About a minute ago   Up About a minute   9980/tcp                                        sia
 7cde488f0fd0   mongo:4.4.1            "docker-entrypoint.s…"   3 days ago           Up 3 days           0.0.0.0:27017->27017/tcp, :::27017->27017/tcp   mongo
 ```
+
+{% hint style="info" %}
+Sia container, I thought we were running skyd? You are right, we are running skyd. The Docker container is still called Sia for some backwards compatibility but we might fix this in the future.&#x20;
+{% endhint %}
 
 ## Prerequisites
 
@@ -93,12 +97,6 @@ mongo_db_mgkey: |
 ```
 
 ## Enable Docker Services
-
-After the initial portal setup, you should have the `sia` and `mongo` docker container running.
-
-{% hint style="info" %}
-Sia container, I thought we were running skyd? You are right, we are running skyd. The Docker container is still called Sia for some backwards compatibility but we might fix this in the future.&#x20;
-{% endhint %}
 
 There are several other docker services that the portal can run. To launch these docker services, simply update your `PORTAL_MODULES` variable in the `<server>.yml` file in LastPass. The options are documented [here](https://github.com/SkynetLabs/ansible-playbooks/blob/master/playbooks/templates/.env.j2#L37), but here is an example of the options:
 
