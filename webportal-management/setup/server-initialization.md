@@ -29,6 +29,10 @@ If you are setting up a single server portal you can leave out the server name a
 
 This LastPass entry is what is used to create the `user` profile on the server.  Set the `Site password` to a strong password, like one generated from [https://passwordsgenerator.net/](https://passwordsgenerator.net).
 
+Example:
+
+![](<../../.gitbook/assets/Screen Shot 2022-01-21 at 3.37.03 PM.png>)
+
 ### Ansible
 
 Prepare your local machine for running ansible by following the setup requirements [here](https://github.com/SkynetLabs/ansible-playbooks#requirements).
