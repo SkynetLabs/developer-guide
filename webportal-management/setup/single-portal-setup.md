@@ -115,7 +115,7 @@ There are several other docker services that the portal can run. To launch these
 For most portals, it is recommended to run all the services but Jaegar. Jaegar is a debugging service, so doesn't need to be run unless you plan on debugging the portal code itself. So the `PORTAL_MODULES` should be updated to the following:
 
 ```
-PORTAL_MODULES=absu 
+PORTAL_MODULES=abs
 ```
 
 ### JWTs
