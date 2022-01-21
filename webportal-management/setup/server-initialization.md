@@ -46,6 +46,7 @@ Prepare your local machine for running ansible by following the setup requiremen
 To set up the portal, you will need to run the [portal-setup-initial.sh](https://github.com/SkynetLabs/ansible-playbooks#playbook-portals-setup-initial) ansible script. At this point you should have all the prerequisites complete except for:
 
 * Logging in to LastPass with the[ lastpass-login.sh](https://github.com/SkynetLabs/ansible-playbooks#lastpass-login) script
+* Check if you need to set any values in `my-vars/config.yml`
 * Adding your server to your `hosts.ini` file
 
 After successfully running the [portal-setup-initial.sh](https://github.com/SkynetLabs/ansible-playbooks#playbook-portals-setup-initial) script you are ready to continue on to the [Single Portal Setup](single-portal-setup.md).
