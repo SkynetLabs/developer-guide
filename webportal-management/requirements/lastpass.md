@@ -68,18 +68,11 @@ You can leave these fields blank for now, with the exception of the `|` for the 
 
 ### portal-server-configs
 
-Under the `portal-server-configs` subfolder, create a `<server>.yml` secure note and put the following fields in the secure note.&#x20;
-
-```
-domain_name: 
-hsd_api_key: 
-portal_modules: 
-portal_name: 
-```
+Under the `portal-server-configs` subfolder, create a `<server>.yml` secure note and put the following fields in the secure note: `domain_name`, `hsd_api_key`, `portal_modules`, and `portal_name`.&#x20;
 
 The `domain_name` and `portal_name` can be set to the domain you plan to host your server at.&#x20;
 
-For example, if you are running a signle server portal, with the domain `mydomain.com`. You might identify the server as `sev1` and name create the secure note like so:
+For example, if you are running a single server portal, with the domain `mydomain.com`. You might identify the server as `sev1` and name create the secure note like so:
 
 ```
 sev1.yml
