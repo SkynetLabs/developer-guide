@@ -10,13 +10,14 @@ Now that you have gone through the setup for the portal, the last step is to run
 
 ## Add To Production
 
-After successfully running the deploy script, you can enable your new portal in your DNS load balancer.
-
-## Host.ini
-
-Lastly, make sure to update your `hosts.ini` file accordingly so that your new server is included in future ansible deployments and updates.  
+For single server portals, you are all done!
 
 
 
- 
+For multi-server portals, after successfully running the deploy script, you can enable your new portal in your DNS load balancer.
 
+&#x20;
+
+
+
+&#x20;
