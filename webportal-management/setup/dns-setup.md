@@ -24,6 +24,8 @@ In Route53, click on `Hosted Zones` and create a new hosted zone. This hosted zo
 
 Once your hosted zone is set up, AWS will have populated a nameserver `NS` record for your domain. Typically there are 4 nameservers listed in the `NS` record. You will need to update the nameservers for your domain where you purchased and managed your domain.&#x20;
 
+![](<../../.gitbook/assets/Screen Shot 2022-01-21 at 10.40.10 AM.png>)
+
 If you happen to purchase your domain through NameCheap, you can update your nameservers by clicking on your domain, selecting the `Custom DNS` option under NameServers, and copying in the name servers that AWS generated for you.
 
 ![](<../../.gitbook/assets/Screen Shot 2022-01-05 at 2.55.33 PM.png>)
