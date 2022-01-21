@@ -15,6 +15,10 @@ Currently you should have `root` (or root like) user access to your server. Ansi
 
 #### Automatically
 
+{% hint style="danger" %}
+**NOTE:** this is currently buggy, please continue to the following step and create your user credentials manually
+{% endhint %}
+
 Ansible can generate Linux user password and save user credentials to LastPass automatically - in this case you can skip to the next section, [portal-setup-initial](server-initialization.md#portal-setup-initial).
 
 #### Setting user credentials manually (optional)
