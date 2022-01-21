@@ -1,5 +1,9 @@
 # LastPass
 
+{% hint style="info" %}
+**NOTE:** Current LastPass is required to save a backup on of the server and portal configs. For single portal operators, we are in the process of adding support for plain text files that can be saved locally and backed up in whatever way you would like. For teams, we will continue to support LastPass as the default secrets manager for portal configurations and login information.&#x20;
+{% endhint %}
+
 ## Folder Structure
 
 Currently, a number of the ansible scripts use LastPass for managing server credentials and common files. If you plan to use the ansible scripts it is currently required to have a LastPass account.
