@@ -81,7 +81,7 @@ $ cat mgkey_yml
   asdf
 ```
 
-Open the `mgkey` file, and copy its contents into LastPass as a secure note titled `mgkey`.
+Open the `mgkey` file, and copy its contents into LastPass as a secure note titled `mgkey`. This secure note can be under the top level `Shared-Ansible` folder.
 
 Open the `mgkey_yml` file, and copy its contents into the `cluster-prod.yml` file under `mongo_db_mgkey`.
 
