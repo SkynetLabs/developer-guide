@@ -37,14 +37,20 @@ portal_skyd_version: "deploy-2021-12-21"
 portal_accounts_version: "deploy-2021-12-21"
 ```
 
+### Editing Cluster Config in LastPass
+
+{% hint style="info" %}
+When creating your `cluster-prod.yml` file, keep in mind that the `prod` suffix in the name is the id of your cluster, as defined by the `portal_cluster_id=prod` entry in your hosts.ini file, located in the `ansible-private` repository. Please see [these docs](https://github.com/SkynetLabs/ansible-playbooks#requirements) for details.
+{% endhint %}
+
+### Cluster Domain in LastPass
+
+In order for Ansible to generate server configuration, we need to set `portal_cluster_domain` field in our `cluster-prod.yml` file. This has to be set to the (cluster) portal domain even if you have single server cluster, e.g. `portal_cluster_domain: example.com`.
+
 ### Mongo Settings in Lastpass
 
 {% hint style="warning" %}
 This LastPass section should be removed and updated to a `config.yml` section once the .env file generate is updated and handles all yml files. These fields should be input vars in the `config.yml` file and the mgkey should be saved in lastpass but then ansible should copy it into the yml file. Also ansible should be able to generate the mgkey automatically if one doesn't exist.
-{% endhint %}
-
-{% hint style="info" %}
-When creating your `cluster-prod.yml` file, keep in mind that the `prod` suffix in the name is the id of your cluster, as defined by the `portal_cluster_id=prod` entry in your hosts.ini file, located in the `ansible-private` repository. Please see [these docs](https://github.com/SkynetLabs/ansible-playbooks#requirements) for details.
 {% endhint %}
 
 In order for mongo to start, we need to set some fields in our `cluster-prod.yml` file. &#x20;
