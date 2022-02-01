@@ -61,6 +61,7 @@
   * [DNS Setup](webportal-management/setup/dns-setup.md)
   * [Server Initialization](webportal-management/setup/server-initialization.md)
   * [Single Portal Setup](webportal-management/setup/single-portal-setup.md)
+  * [Stripe](webportal-management/setup/stripe.md)
   * [Deployment](webportal-management/setup/deployment.md)
   * [Abuse Handling](webportal-management/setup/abuse-handling.md)
 * [Upgrading](webportal-management/upgrading.md)
