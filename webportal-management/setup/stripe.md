@@ -1,3 +1,0 @@
-# Stripe
-
-Coming soon....
