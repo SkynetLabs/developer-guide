@@ -11,7 +11,6 @@ The first step is to order a new server from your hosting provider that meets th
 Here is a list of some hosting providers to consider:
 
 * [https://www.ovh.com/world/](https://www.ovh.com/world/)
-* [https://skynode.eu/](https://skynode.eu)
 * [https://dedicated.com/](https://dedicated.com)
 
 ### Network
