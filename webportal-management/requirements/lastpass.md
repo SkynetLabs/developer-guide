@@ -35,6 +35,7 @@ This Secure Notes section is currently a manual process that needs to be moved t
 
 Under the `portal-common-configs` subfolder, create a `common.yml` secure note and put the following fields in the secure note.
 
+{% code title="common.yml" %}
 ```
 aws_access_key: 
 aws_secret_access_key:
@@ -47,13 +48,15 @@ airtable_table:
 airtable_field:
 s3_backup_path:
 ```
+{% endcode %}
 
 You can leave these fields blank for now, and we will come back to them later.&#x20;
 
 ### portal-cluster-configs
 
-Under the `portal-cluster-configs` subfolder, create a `cluster-prod.yml` secure note and put the following fields in the secure note.
+Under the `portal-cluster-configs` subfolder, create a `cluster-prod.yml` secure note and put the following fields in the secure note. Note that `prod` in `cluster-prod.yml` must match `portal_cluster_id` from your `hosts.ini` file.
 
+{% code title="cluster-prod.yml" %}
 ```
 accounts_email_uri: 
 mongo_db_mgkey: |
@@ -63,6 +66,7 @@ stripe_publishable_key:
 stripe_secret_key: 
 stripe_webhook_secret: 
 ```
+{% endcode %}
 
 You can leave these fields blank for now, with the exception of the `|` for the `mongo_db_mgkey` field, and we will come back to them later.&#x20;
 
@@ -70,29 +74,31 @@ You can leave these fields blank for now, with the exception of the `|` for the 
 
 Under the `portal-server-configs` subfolder, create a `<server>.yml` secure note and put the following fields in the secure note: `domain_name`, `hsd_api_key`, `portal_modules`, and `portal_name`.&#x20;
 
+Note that `<server>` from `<server>.yml` must match your server invnetory hostname from your `hosts.ini` file.
+
 The `domain_name` and `portal_name` can be set to the domain you plan to host your server at.&#x20;
 
 For example, if you are running a single server portal, with the domain `mydomain.com`. You might identify the server as `sev1` and name create the secure note like so:
 
+{% code title="sev1.yml" %}
 ```
-sev1.yml
-
 domain_name: mydomain.com
 hsd_api_key: 
 portal_modules: 
 portal_name: mydomain.com
 ```
+{% endcode %}
 
 Another example, is if you are running a multi-server portal and `sev1` is just the first of many servers. The secure note would look like this:
 
+{% code title="sev1.yml" %}
 ```
-sev1.yml
-
 domain_name: sev1.mydomain.com
 hsd_api_key: 
 portal_modules: 
 portal_name: sev1.mydomain.com
 ```
+{% endcode %}
 
 {% hint style="info" %}
 The `domain_name` should match the A records you will be setting up in the DNS Setup section.
