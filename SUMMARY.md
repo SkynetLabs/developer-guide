@@ -62,6 +62,7 @@
   * [Server Initialization](webportal-management/setup/server-initialization.md)
   * [Single Portal Setup](webportal-management/setup/single-portal-setup.md)
   * [Deployment](webportal-management/setup/deployment.md)
+  * [Discord Notifications](webportal-management/setup/discord-notifications.md)
   * [Stripe](webportal-management/setup/stripe.md)
   * [Abuse Handling](webportal-management/setup/abuse-handling.md)
 * [Upgrading](webportal-management/upgrading.md)
