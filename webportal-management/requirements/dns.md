@@ -1,4 +1,6 @@
-# AWS
+# DNS
+
+## AWS
 
 {% hint style="info" %}
 **NOTE:** Currently, this documentation is set up to walk you through using AWS for your DNS management.

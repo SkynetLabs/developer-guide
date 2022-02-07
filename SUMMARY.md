@@ -54,7 +54,7 @@
   * [Domain Name](webportal-management/requirements/domain-name.md)
   * [LastPass](webportal-management/requirements/lastpass.md)
   * [Ansible](webportal-management/requirements/ansible.md)
-  * [AWS](webportal-management/requirements/aws.md)
+  * [DNS](webportal-management/requirements/dns.md)
   * [Hosting Provider](webportal-management/requirements/hosting-provider.md)
   * [SiaCoin](webportal-management/requirements/siacoin.md)
 * [Setup](webportal-management/setup/README.md)
