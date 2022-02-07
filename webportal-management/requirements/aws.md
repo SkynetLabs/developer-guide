@@ -4,6 +4,10 @@
 **NOTE:** Currently, this documentation is set up to walk you through using AWS for your DNS management.
 {% endhint %}
 
+{% hint style="info" %}
+**NOTE:** You will get charges for your AWS usage. Even on our large portals, these charges have been minimal. Current rates as of Feb 2022, are $0.50 for a hosted zone and $0.40 per million queries. Most small portal operators will see less than $1 in AWS usage.&#x20;
+{% endhint %}
+
 ### Account Creation
 
 If you already have an AWS account you can skip this section, if not, continue on.&#x20;
