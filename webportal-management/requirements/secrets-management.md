@@ -1,8 +1,12 @@
-# LastPass
+# Secrets Management
 
 {% hint style="info" %}
-**NOTE:** Current LastPass is required to save a backup on of the server and portal configs. For single portal operators, we are in the process of adding support for plain text files that can be saved locally and backed up in whatever way you would like. For teams, we will continue to support LastPass as the default secrets manager for portal configurations and login information.&#x20;
+**NOTE:** Currently LastPass is required to save a backup on of the server and portal configs. For single portal operators, we are in the process of adding support for plain text files that can be saved locally and backed up in whatever way you would like. For teams, we will continue to support LastPass as the default secrets manager for portal configurations and login information.&#x20;
 {% endhint %}
+
+## LastPass
+
+Currently, ansible is used for portal management. To manage portal secrets as a team, we use LastPass.
 
 ## Folder Structure
 
