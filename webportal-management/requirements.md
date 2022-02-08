@@ -8,7 +8,7 @@ description: Below are the prerequisites for setting up a Public Web Portal serv
 
 Here are the goals for each of the prerequisites.
 
-### DNS
+### [DNS](requirements/aws.md)
 
 #### Goal
 
@@ -19,7 +19,7 @@ The goal for the DNS Prerequisite is that you have a domain name and you have th
 1. Buy a domain name
 2. Create an account where you can properly manage the DNS records and any required load balancing for the domain
 
-### Hosting Provider
+### [Hosting Provider](requirements/hosting-provider.md)
 
 #### Goal
 
@@ -30,7 +30,7 @@ In order to run a Webportal, you will need 1 or more servers. At the end of this
 1. Buy a server(s)
 2. Confirm you have root ssh access
 
-### Secrets Management
+### [Secrets Management](requirements/secrets-management.md)
 
 #### Goal
 
@@ -41,7 +41,7 @@ Set up your secrets management process for your portal such that ansible can be 
 1. Create a LastPass Account (Plain Text option coming soon)
 2. Initialize config files
 
-### Ansible
+### [Ansible](requirements/ansible.md)
 
 #### Goal
 
@@ -54,7 +54,7 @@ Set up ansible.
    2. Repo cloned
    3. [ansible-private](https://github.com/SkynetLabs/ansible-private-sample) repo cloned&#x20;
 
-### SiaCoin
+### [SiaCoin](requirements/siacoin.md)
 
 #### Goal
 

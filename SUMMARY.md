@@ -63,10 +63,10 @@
   * [Deployment](webportal-management/setup/deployment.md)
   * [Discord Notifications](webportal-management/setup/discord-notifications.md)
   * [Stripe](webportal-management/setup/stripe.md)
-  * [Abuse Handling](webportal-management/setup/abuse-handling.md)
 * [Upgrading](webportal-management/upgrading.md)
 * [Retiring Webportal Servers](webportal-management/retiring-webportal-servers.md)
-* [Handling Abuse Requests](webportal-management/handling-abuse-requests.md)
+* [Handling Abuse Requests](webportal-management/handling-abuse-requests/README.md)
+  * [Abuse Handling Modules](webportal-management/handling-abuse-requests/abuse-handling-modules.md)
 * [Getting Help](webportal-management/getting-help.md)
 
 ## APIs & SDKs

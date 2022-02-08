@@ -1,14 +1,34 @@
 # DNS Setup
 
-In this section, we will cover the basic DNS setup for a single server portal.
+## Overview
 
-{% hint style="info" %}
-**NOTE:** Currently, this documentation is set up to walk you through using AWS for your DNS management.
-{% endhint %}
+### Goals
+
+The goal of this section is to get your DNS setup for your portal. For single server portals, this just requires A records and for multi-server portals, this requires A records and a load balancer.
+
+### Steps
+
+#### Single Server Portal
+
+1. Create Hosted Zone
+2. Update name servers
+3. Set A Records
+
+#### Multi-Server Portal
+
+1. Create Hosted Zone
+2. Update name servers
+3. Set A Records
+4. Create API Keys
+5. Setup Load Balancer
 
 ## AWS
 
 Currently, this documentation is set up to walk you through using AWS for your DNS management.
+
+{% hint style="info" %}
+**NOTE:** Currently, this documentation is set up to walk you through using AWS for your DNS management.
+{% endhint %}
 
 ### Route53
 
