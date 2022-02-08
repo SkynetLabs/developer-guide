@@ -2,13 +2,23 @@
 
 In this section, we will cover the basic DNS setup for a single server portal.
 
-## Requirements
-
-This section assumes that you have already purchased a domain for your portal and have created an AWS account.
+{% hint style="info" %}
+**NOTE:** Currently, this documentation is set up to walk you through using AWS for your DNS management.
+{% endhint %}
 
 ## AWS
 
 Currently, this documentation is set up to walk you through using AWS for your DNS management.
+
+### Access Key
+
+You need to generate an access key for your account.
+
+Click on `Security Credentials` in your account dropdown menu.
+
+Under `Access keys`, click `Create New Access Key`.
+
+Save the information in the `common.yml` file you created in your `portal-common-configs` LastPass folder. The `AWSAccessKeyID` is the `aws_access_key` and the `AWSSecretKey` is the `aws_secret_access_key`.
 
 ### Route53
 
