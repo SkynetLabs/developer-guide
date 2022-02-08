@@ -26,15 +26,5 @@ The goal of this section is to get your DNS setup for your portal. For single se
 4. Create API Keys
 5. Setup Load Balancer
 
-### [Server Initialization](server-initialization.md)
-
-#### Goals
-
-#### Steps
-
-### Single Portal Setup
-
-#### Goals
-
-#### Steps
+###
 
