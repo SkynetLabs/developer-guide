@@ -2,7 +2,14 @@
 
 ## Overview
 
+### Goal
+
 In order to run a Webportal, you will need 1 or more servers. At the end of this section, you should have a newly initialized server that meets the requirements and is accessible via `ssh` for the `root` user or compatible `sudo` user.&#x20;
+
+### Steps
+
+1. Buy a server(s)
+2. Confirm you have root ssh access
 
 ## Order a New Server
 

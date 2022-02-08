@@ -1,12 +1,23 @@
 # Secrets Management
 
-{% hint style="info" %}
-**NOTE:** Currently LastPass is required to save a backup on of the server and portal configs. For single portal operators, we are in the process of adding support for plain text files that can be saved locally and backed up in whatever way you would like. For teams, we will continue to support LastPass as the default secrets manager for portal configurations and login information.&#x20;
-{% endhint %}
+## Overview
+
+### Goal
+
+Set up your secrets management process for your portal such that ansible can be used.
+
+### Steps
+
+1. Create a LastPass Account (Plain Text option coming soon)
+2. Initialize config files
 
 ## LastPass
 
 Currently, ansible is used for portal management. To manage portal secrets as a team, we use LastPass.
+
+{% hint style="info" %}
+**NOTE:** Currently LastPass is required to save a backup on of the server and portal configs. For single portal operators, we are in the process of adding support for plain text files that can be saved locally and backed up in whatever way you would like. For teams, we will continue to support LastPass as the default secrets manager for portal configurations and login information.&#x20;
+{% endhint %}
 
 ## Folder Structure
 
@@ -78,11 +89,11 @@ You can leave these fields blank for now, with the exception of the `|` for the 
 
 Under the `portal-server-configs` subfolder, create a `<server>.yml` secure note and put the following fields in the secure note: `domain_name`, `hsd_api_key`, `portal_modules`, and `portal_name`.&#x20;
 
-Note that `<server>` from `<server>.yml` must match your server invnetory hostname from your `hosts.ini` file.
+Note that `<server>` from `<server>.yml` must match your server inventory hostname from your `hosts.ini` file.
 
 The `domain_name` and `portal_name` can be set to the domain you plan to host your server at.&#x20;
 
-For example, if you are running a single server portal, with the domain `mydomain.com`. You might identify the server as `sev1` and name create the secure note like so:
+For example, if you are running a single server portal, with the domain `mydomain.com`. You might identify the server as `sev1` and create the secure note like so:
 
 {% code title="sev1.yml" %}
 ```
@@ -93,7 +104,7 @@ portal_name: mydomain.com
 ```
 {% endcode %}
 
-Another example, is if you are running a multi-server portal and `sev1` is just the first of many servers. The secure note would look like this:
+Another example is if you are running a multi-server portal and `sev1` is just the first of many servers. The secure note would look like this:
 
 {% code title="sev1.yml" %}
 ```
@@ -104,6 +115,4 @@ portal_name: sev1.mydomain.com
 ```
 {% endcode %}
 
-{% hint style="info" %}
-The `domain_name` should match the A records you will be setting up in the DNS Setup section.
-{% endhint %}
+The `domain_name` should match the A records you will be setting up in the [DNS Setup](../setup/dns-setup.md) section.

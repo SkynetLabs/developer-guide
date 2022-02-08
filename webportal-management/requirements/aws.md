@@ -1,6 +1,6 @@
 # DNS
 
-## TL;DR
+## Overview
 
 ### Goal
 
