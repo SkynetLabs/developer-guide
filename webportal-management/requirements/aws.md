@@ -1,5 +1,22 @@
 # DNS
 
+## TL;DR
+
+### Goal
+
+The goal for the DNS Prerequisite is that you have a domain name and you have the ability to manage the DNS records for the domain name. For multi-server portals, you will also need the ability to set up a load balancer for the portal.
+
+### Steps
+
+1. Buy a domain name
+2. Create an account where you can properly manage the DNS records and any required load balancing for the domain
+
+## Domain Name
+
+If you are setting up a public webportal, you will need your own domain name for your webportal. If you are just setting up a single portal then this is really all you need. &#x20;
+
+One option for purchasing a domain name is through [NameCheap](https://namecheap.com). Search for a domain name you would like and follow the steps to purchase the domain name and step up your account.&#x20;
+
 ## AWS
 
 {% hint style="info" %}

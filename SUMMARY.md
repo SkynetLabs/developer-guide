@@ -51,11 +51,10 @@
 
 * [Overview](webportal-management/overview.md)
 * [Prerequisites](webportal-management/requirements.md)
-  * [Domain Name](webportal-management/requirements/domain-name.md)
-  * [Secrets Management](webportal-management/requirements/secrets-management.md)
-  * [Ansible](webportal-management/requirements/ansible.md)
   * [DNS](webportal-management/requirements/aws.md)
   * [Hosting Provider](webportal-management/requirements/hosting-provider.md)
+  * [Secrets Management](webportal-management/requirements/secrets-management.md)
+  * [Ansible](webportal-management/requirements/ansible.md)
   * [SiaCoin](webportal-management/requirements/siacoin.md)
 * [Setup](webportal-management/setup/README.md)
   * [DNS Setup](webportal-management/setup/dns-setup.md)
