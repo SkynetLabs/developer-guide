@@ -68,6 +68,7 @@
 * [Handling Abuse Requests](webportal-management/handling-abuse-requests/README.md)
   * [Abuse Handling Modules](webportal-management/handling-abuse-requests/abuse-handling-modules.md)
 * [Getting Help](webportal-management/getting-help.md)
+* [Changelog](webportal-management/changelog.md)
 
 ## APIs & SDKs
 
