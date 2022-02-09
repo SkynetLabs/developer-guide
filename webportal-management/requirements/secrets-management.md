@@ -29,13 +29,12 @@ Within LastPass, ansible is going to look for a folder where you are storing por
 This folder needs to be a `Shared` folder in LastPass for ansible to be able to properly interact with it. When you create a shared folder in LastPass it will automatically add the `Shared` prefix.
 {% endhint %}
 
-The top-level folder then will need 3 subfolders that will contain information managed by ansible. Again you can name these whatever you would like, or use the default names `portal-common-configs`, `portal-cluster-configs`, and `portal-server-configs.`
+The top-level folder then will need 2 subfolders that will contain information managed by ansible. Again you can name these whatever you would like, or use the default names `portal-cluster-configs`, and `portal-server-configs.`
 
 Your LastPass should look like the following:
 
 ```
 Share-Ansible/
-   portal-common-configs/
    portal-cluster-configs/
    portal-server-configs/
 ```
@@ -46,36 +45,25 @@ Share-Ansible/
 This Secure Notes section is currently a manual process that needs to be moved to ansible.
 {% endhint %}
 
-### portal-common-configs
-
-Under the `portal-common-configs` subfolder, create a `common.yml` secure note and put the following fields in the secure note.
-
-{% code title="common.yml" %}
-```
-aws_access_key: 
-aws_secret_access_key:
-discord_bot_token:
-serverlist_entropy: 
-serverlist_tweak: 
-airtable_api_key:
-airtable_base:
-airtable_table: 
-airtable_field:
-s3_backup_path:
-```
-{% endcode %}
-
-You can leave these fields blank for now, and we will come back to them later.&#x20;
-
 ### portal-cluster-configs
 
 Under the `portal-cluster-configs` subfolder, create a `cluster-prod.yml` secure note and put the following fields in the secure note. Note that `prod` in `cluster-prod.yml` must match `portal_cluster_id` from your `hosts.ini` file.
 
 {% code title="cluster-prod.yml" %}
 ```
+s3_backup_path: 
 accounts_email_uri: 
+airtable_api_key: 
+airtable_base: 
+airtable_table: 
+airtable_field: 
+aws_access_key: 
+aws_secret_access_key: 
+discord_bot_token: 
 mongo_db_mgkey: |
 portal_cluster_domain: 
+serverlist_entropy: 
+serverlist_tweak: 
 stripe_api_key: 
 stripe_publishable_key: 
 stripe_secret_key: 
