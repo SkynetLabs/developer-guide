@@ -1,5 +1,9 @@
 # Changelog
 
+## Helpful Changelogs
+
+* [ansible-playbooks changelog](https://github.com/SkynetLabs/ansible-playbooks/blob/master/CHANGELOG.md)
+
 ## February 9th, 2022
 
 The `common.yml` file is now optional. Here are some steps to make sure you have the updates
