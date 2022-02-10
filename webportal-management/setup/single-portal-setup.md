@@ -120,7 +120,7 @@ PORTAL_MODULES=abs
 
 In order to use accounts, the portal will need to issue and sign [JWT](https://auth0.com/docs/secure/tokens/json-web-tokens)s. For that to be possible, we need a [JWKS](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets) defined on each server. For the moment, this is a manual operation. The instructions for generating such a file are here: [https://github.com/SkynetLabs/skynet-accounts#generating-a-jwks-and-cookie-keys](https://github.com/SkynetLabs/skynet-accounts#generating-a-jwks-and-cookie-keys).
 
-Once you generate the content, you will have `jwks.json`. In LastPass create secure note named `cluster-prod-jwks.json` (resp. `cluster-{{ portal_cluster_id }}-jwks.json`) under `portal-cluster-configs` (in the same folder as `cluster-prod.yml`) and copy content of generated `jwks.json` to the secure note.
+Once you generate the content, you will have `jwks.json` file. In LastPass create secure note named `cluster-prod-jwks.json` (resp. `cluster-{{ portal_cluster_id }}-jwks.json`) under `portal-cluster-configs` (next to `cluster-prod.yml`) and copy content of generated `jwks.json` to the secure note.
 
 ## Portal Setup Following
 
