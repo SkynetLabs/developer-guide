@@ -14,3 +14,7 @@ The `common.yml` file is now optional. Here are some steps to make sure you have
 3. If using LastPass, update your LastPass folder variables if you are not using the defaults
 
 See more information in the #portal-operators channel on the Skynet Labs discord [here](https://discord.com/channels/341359001797132308/674433179968602113/940968768715251712).
+
+## February 10th, 2022
+
+`jwks.json` secure note in LastPass should be moved to `.../portal-cluster-configs/cluster-prod-jwks.json` next to `.../portal-cluster-configs/cluster-prod.yml`.
