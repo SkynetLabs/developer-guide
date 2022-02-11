@@ -72,6 +72,12 @@ The process for setting A records for a multi-server portal is the same as for a
 
 So if your portal domain is `mydomain.com` and you're setting up a server at `sev1.mydomain.com`, you would have an A record for `sev1.mydomain.com` pointing to the IP of the server and a wildcard A record for `*.sev1.mydomain.com` pointing to the first record `sev1.mydomain.com`.
 
+#### CNAME Record
+
+If you want your domain to be accessible at both `mydomain.com` and `www.mydomain.com` you will need to add a CNAME record for `www` that points to `mydomain.com` like so:
+
+![](<../../.gitbook/assets/Screen Shot 2022-02-11 at 1.04.33 PM.png>)
+
 ## Verify
 
 DNS records can sometimes take a while to update. However, you will know that everything is set up properly when you can ssh into your server with the domain name instead of the IP address, like so:
