@@ -38,6 +38,6 @@ Again, go to your server settings.
 
 ![](<../../.gitbook/assets/image (18).png>)
 
-Click on members, find the user or role you would like to mention in the message. Click on the 3 dot menu and copy their role ID with `Copy ID` and paste it into your `.env` file.&#x20;
+Click on roles, create a new role if you have none. Find the role you would like to mention in the message. Click on the 3 dot menu and copy their role ID with `Copy ID` and paste it into your `.env` file.&#x20;
 
-![](<../../.gitbook/assets/Screen Shot 2022-02-04 at 4.36.30 PM (1).png>)
+![](<../../.gitbook/assets/Screen Shot 2022-02-10 at 8.43.41 PM.png>)
