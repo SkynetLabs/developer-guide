@@ -75,11 +75,11 @@ You can leave these fields blank for now, with the exception of the `|` for the 
 
 ### portal-server-configs
 
-Under the `portal-server-configs` subfolder, create a `<server>.yml` secure note and put the following fields in the secure note: `domain_name`, `hsd_api_key`, `portal_modules`, and `portal_name`.&#x20;
+Under the `portal-server-configs` subfolder, create a `<server>.yml` secure note and put the following fields in the secure note: `domain_name`, `hsd_api_key` and `portal_modules`.&#x20;
 
 Note that `<server>` from `<server>.yml` must match your server inventory hostname from your `hosts.ini` file.
 
-The `domain_name` and `portal_name` can be set to the domain you plan to host your server at.&#x20;
+The `domain_name` should be set to the domain you plan to host your server at.&#x20;
 
 For example, if you are running a single server portal, with the domain `mydomain.com`. You might identify the server as `sev1` and create the secure note like so:
 
@@ -88,7 +88,6 @@ For example, if you are running a single server portal, with the domain `mydomai
 domain_name: mydomain.com
 hsd_api_key: 
 portal_modules: 
-portal_name: mydomain.com
 ```
 {% endcode %}
 
@@ -99,7 +98,6 @@ Another example is if you are running a multi-server portal and `sev1` is just t
 domain_name: sev1.mydomain.com
 hsd_api_key: 
 portal_modules: 
-portal_name: sev1.mydomain.com
 ```
 {% endcode %}
 
